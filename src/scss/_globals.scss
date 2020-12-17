@@ -1,0 +1,20 @@
+@import './variables';
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  color: whitesmoke;
+  background: $primerbg;
+  border: none;
+}
+
+section {
+  width: 70%;
+}

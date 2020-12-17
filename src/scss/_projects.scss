@@ -1,0 +1,67 @@
+@import './variables';
+
+#projects {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  .big-container{
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .p-card {
+    padding: 1rem;
+    width: 47%;
+    height: 15rem;
+    box-shadow: 2px 5px 15px -1px rgba(0,0,0,0.72);
+    border-radius: 5px;
+    margin: 1rem;
+    @include responsive1 {
+      width: 95%;
+      height: 15rem;
+    }
+    .p-card-title {
+      color: whitesmoke;
+      background: $secondbg;
+      font-weight: bolder;
+      width: fit-content;
+      margin: 0;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .p-info {
+      button {
+        margin: 6.9rem 0 0 0;
+      }
+    }
+  }
+
+  .no-pro {
+    background-image: url("../img/no-pro/no-prob.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .cosplay {
+    background-image: url("../img/cosplay-shop/cosplay-shop.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .consultly {
+    background-image: url("../img/consultly/consultly.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .memorize {
+    background-image: url("../img/memorize/memorize.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .sdp {
+    background-image: url("../img/sdp/sdp.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .music {
+    background-image: url("../img/music-bot/music-bot.png");
+    background-position: center;
+    background-size: cover;
+  }
+}

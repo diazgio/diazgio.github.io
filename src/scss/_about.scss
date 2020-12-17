@@ -1,0 +1,48 @@
+@import './variables';
+
+#about {
+  margin-top: 2rem;
+  height: fit-content;
+  @include responsive1 {
+    .about-container {
+      .about-info {
+        margin: 2rem;
+      }
+      .about-button {
+        margin-bottom: 2rem;
+        text-align: center;
+        a {
+          padding: 1rem;
+          color: whitesmoke;
+          font-weight: bolder;
+          background: $secondbg;
+          text-decoration: none;
+          border-radius: 15px;
+        }
+      }
+    }
+    .about-know {
+      flex-direction: column;
+      align-items: center;
+      .about-card {
+        width: 80%;
+        background: $fourthbg;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 7px;
+        .about-skills {
+          text-align: center;
+          .about-items {
+            margin-top: 1rem;
+            p {
+              margin-bottom: 0.5rem;
+              i {
+                margin-right: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

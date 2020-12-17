@@ -1,0 +1,55 @@
+@import './variables';
+
+#intro {
+  position: relative;
+  height: 100vh;
+  width: 75%;
+  padding: 2rem 0;
+  background: $primerbg;
+  .intro-header {
+    h1,
+    p {
+      color: white;
+    }
+  }
+  @include responsive1 {
+    z-index: 1;
+    width: 100%;
+    padding: 5rem;
+    .intro-header {
+      .intro-title {
+        margin-bottom: 2rem;
+        h1 {
+          font-size: 3.3rem;
+          text-decoration: underline;
+        }
+      }
+      .intro-details{
+        margin-bottom: 2rem;
+        p {
+          font-size: 1.8rem;
+          font-weight: bolder;
+        }
+      }
+      .intro-message {
+        background: $secondbg;
+        opacity: 0.9;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        p {
+          font-size: 1.5rem;
+          font-weight: bolder;
+        }
+      }
+      .intro-social {
+        text-align: end;
+        a {
+          color: white;
+          font-size: 2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

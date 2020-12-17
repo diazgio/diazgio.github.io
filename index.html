@@ -3,39 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="https://kit.fontawesome.com/e4c4b9b250.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./src/css/main.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header class='container-fluid d-flex p-0'>
-        <nav class='navbar-menu col-2 m-0'>
-            <div class='namelogo d-flex justify-content-center align-items-center'>
-                <h1>GDM</h1>
-            </div>
-            <ul>
-                <li><a href="#">Intro</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class='info-header col-10 bg-secondary m-0'>   
-
+  <nav class='navbar-menu'>
+      <div class='namelogo d-flex'>
+          <h1>GDM</h1>
+      </div>
+      <ul class='menu'>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+  <main>
+      <section class='info-header' id='intro'>
+        <div class='intro-header'>
+          <div class='intro-title'>
+              <h1>Giordano Díaz Merino</h1>
+          </div>
+          <div class='intro-details'>
+              <p>WEB DEVELOPER</p>
+              <p>& FRIEND.</p>
+              <p>PROBLEM'S SOLVER</p>
+          </div>
+          <div class="intro-message">
+            <p>
+              Hello I'm a Full Stack software developer,look through some of my work and experience! If you like what you see and have project you need coded, don’t hesistate to contact me.
+            </p>
+          </div>
+          <div class='intro-social'>
+              <a href="https://www.facebook.com/GiorDiaz93" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://github.com/diazgio" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://twitter.com/giordano_diaz" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/giordano-diaz/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
-    </header>
-    <main>
-        <section class='projects'>
-    
-        </section>
-        <section class='about'>
-    
-        </section>
-        <section class='contact-footer'>
-    
-        </section>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      </section>
+      <section class='projects' id='projects'>
+        <h1>My Work</h1>
+        <div class='big-container d-flex'>
+          <div class='no-pro p-card'>
+            <h2 class='p-card-title'>No Problem</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div class='cosplay p-card'>
+            <h2 class='p-card-title'>Cosplay-shop</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div class='consultly p-card'>
+            <h2 class='p-card-title'>Consultly</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div class='memorize p-card'>
+            <h2 class='p-card-title'>Memorizing</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div class='sdp p-card'>
+            <h2 class='p-card-title'>SDP</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div class='music p-card'>
+            <h2 class='p-card-title'>Music bot</h2>
+            <div class='p-info'>
+              <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='about' id='about'>
+        <h1>About Me</h1>
+        <div class='about-container'>
+          <div class='about-info'>
+            <p>
+              I am a junior developer with knowledge and experience in front-end and back-end development.
+              </br>
+              </br>
+              All the projects I have worked on until today are related to web development.
+              </br>
+              </br>
+              My goal is to become a video game developer working in that industry or to make my own video game specifically augmented reality.
+            </p>
+          </div>
+          <div class='about-button'>
+            <a href="https://docs.google.com/document/d/18Ki6v8wnpmTJn4-FaHMS7kqcRx2VidrePo7Z0EmNiAQ/edit?usp=sharing" target="_blank">Get My Resume</a>
+          </div>
+        </div>
+        <div class='about-know d-flex'>
+          <div class='about-card'>
+            <div class='about-skills'>
+              <h3>Languages</h3>
+              <div class='about-items'>
+                <p><i class="fab fa-html5"></i> HTML 5</p>
+                <p><i class="fab fa-css3-alt"></i> CSS 3</p>
+                <p><i class="fab fa-sass"></i> SCSS</p>
+                <p><i class="fas fa-gem"></i> Ruby</p>
+                <p><i class="fab fa-js-square"></i> JavaScript</p>
+              </div>
+            </div>
+          </div>
+          <div class='about-card'>
+            <div class='about-skills'>
+              <h3>Frameworks</h3>
+              <div class='about-items'>
+                <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
+                <p><i class="fas fa-wind"></i> Tailwind</p>
+                <p><i class="fas fa-h-square"></i> Heroku</p>
+                <p><i class="fas fa-gem"></i>Ruby on Rails</p>
+                <p><i class="fab fa-react"></i> React</p>
+              </div>
+            </div>
+          </div>
+          <div class='about-card'>
+            <div class='about-skills'>
+              <h3>Skills</h3>
+              <div class='about-items'>
+                <p><i class="fab fa-git-square"></i> Git Flow</p>
+                <p><i class="fab fa-github"></i> GitHub</p>
+                <p><i class="fab fa-aws"></i> AWS</p>
+                <p><i class="fas fa-video"></i> OBS Studio Streaming</p>
+                <p><i class="fab fa-google"></i> Google Ads</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contact-footer'>
+  
+      </section>
+  </main>
+  <script src="./src/javascript/app.js"></script>
 </body>
 </html>
