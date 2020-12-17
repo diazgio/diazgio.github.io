@@ -2,10 +2,11 @@
 
 #intro {
   position: relative;
-  height: 100vh;
-  width: 75%;
+  height: fit-content;
+  width: 100%;
   padding: 2rem 0;
   background: $primerbg;
+  border-radius: 0 6rem 0 6rem;
   .intro-header {
     h1,
     p {
@@ -18,14 +19,14 @@
     padding: 5rem;
     .intro-header {
       .intro-title {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         h1 {
           font-size: 3.3rem;
           text-decoration: underline;
         }
       }
       .intro-details{
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         p {
           font-size: 1.8rem;
           font-weight: bolder;
@@ -34,7 +35,7 @@
       .intro-message {
         background: $secondbg;
         opacity: 0.9;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         padding: 1rem;
         border-radius: 1rem;
         p {

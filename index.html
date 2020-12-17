@@ -13,10 +13,10 @@
           <h1>GDM</h1>
       </div>
       <ul class='menu'>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#intro" class='menu-items'>Intro</a></li>
+          <li><a href="#projects" class='menu-items'>Portfolio</a></li>
+          <li><a href="#about" class='menu-items'>About</a></li>
+          <li><a href="#contact" class='menu-items'>Contact</a></li>
       </ul>
   </nav>
   <main>
@@ -52,10 +52,96 @@
               <button id='no-proBtn' class='btn'>More Info</button>
             </div>
           </div>
+          <div id='no-proModal' class='modal'>
+            <div class="modal-content">
+              <div class="d-flex space-between modal-box">
+                <h1>No Problem</h1>
+                <span class="no-problem-close">&times;</span>
+              </div>
+              <div class="slidershow-container">
+                <div class="no-proSlides">
+                  <img src="./src/img/no-pro/categ.png" alt="noproblem">
+                  <h3>No problem</h3>
+                </div>
+
+                <div class="no-proSlides">
+                  <img src="./src/img/no-pro/logpage.png" alt="noproblem">
+                  <h3>No problem</h3>
+                </div>
+
+                <div class="no-proSlides">
+                  <img src="./src/img/no-pro/no-prob.png" alt="noproblem">
+                  <h3>No problem</h3>
+                </div>
+
+                <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
+                <a class='next' onclick='plusSlides(1)'>&#10095;</a>
+              </div>
+              <div class="dot-container">
+                <div>
+                  <img src="./src/img/no-pro/categ.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(1)">
+                  <img src="./src/img/no-pro/logpage.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(2)">
+                  <img src="./src/img/no-pro/no-prob.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(3)">
+                </div>
+              </div>
+              <div class='d-flex space-between modal-info'>
+                <p>
+                  No problem app it's a social media web app to share your concerns and find help of all the comunity.
+                </p>
+                <div class="d-column">
+                  <a href="https://guarded-mesa-08722.herokuapp.com/" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/diazgio/No-Problem-Capstone" target="_blank" class="btn">Source</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class='cosplay p-card'>
             <h2 class='p-card-title'>Cosplay-shop</h2>
             <div class='p-info'>
-              <button id='no-proBtn' class='btn'>More Info</button>
+              <button id='cosplayBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div id='cosplayModal' class='modal'>
+            <div class="modal-content">
+              <div class="d-flex space-between modal-box">
+                <h1>Cosplay Shop</h1>
+                <span class="cosplay-close">&times;</span>
+              </div>
+              <div class="slidershow-container">
+                <div class="cosplaySlides">
+                  <img src="./src/img/cosplay-shop/cosplay1.png" alt="noproblem">
+                  <h3>Cosplay Shop</h3>
+                </div>
+
+                <div class="cosplaySlides">
+                  <img src="./src/img/cosplay-shop/cosplay2.png" alt="noproblem">
+                  <h3>Cosplay shop</h3>
+                </div>
+
+                <div class="cosplaySlides">
+                  <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="noproblem">
+                  <h3>Cosplay shop</h3>
+                </div>
+
+                <a class='prev' onclick='plusSlidesC(-1)'>&#10094;</a>
+                <a class='next' onclick='plusSlidesC(1)'>&#10095;</a>
+              </div>
+              <div class="dot-container">
+                <div>
+                  <img src="./src/img/cosplay-shop/cosplay1.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(1)">
+                  <img src="./src/img/cosplay-shop/cosplay2.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(2)">
+                  <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(3)">
+                </div>
+              </div>
+              <div class='d-flex space-between modal-info'>
+                <p>
+                  No problem app it's a social media web app to share your concerns and find help of all the comunity.
+                </p>
+                <div class="d-column">
+                  <a href="https://diazgio.github.io/Cosplay-shop-capstone/index.html" target="_blank" class="btn">Demo</a>
+                  <a href="https://github.com/diazgio/Cosplay-shop-capstone" target="_blank" class="btn">Source</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class='consultly p-card'>
@@ -64,10 +150,20 @@
               <button id='no-proBtn' class='btn'>More Info</button>
             </div>
           </div>
+          <div id='consultlyModal' class='modal'>
+            <div class="modal-content">
+              
+            </div>
+          </div>
           <div class='memorize p-card'>
             <h2 class='p-card-title'>Memorizing</h2>
             <div class='p-info'>
               <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div id='memorizeModal' class='modal'>
+            <div class="modal-content">
+              
             </div>
           </div>
           <div class='sdp p-card'>
@@ -76,10 +172,20 @@
               <button id='no-proBtn' class='btn'>More Info</button>
             </div>
           </div>
+          <div id='sdpModal' class='modal'>
+            <div class="modal-content">
+              
+            </div>
+          </div>
           <div class='music p-card'>
             <h2 class='p-card-title'>Music bot</h2>
             <div class='p-info'>
               <button id='no-proBtn' class='btn'>More Info</button>
+            </div>
+          </div>
+          <div id='musicModal' class='modal'>
+            <div class="modal-content">
+              
             </div>
           </div>
         </div>
@@ -141,8 +247,31 @@
           </div>
         </div>
       </section>
-      <section class='contact-footer'>
-  
+      <section class='contact-footer' id='contact'>
+        <h2>Contact Me</h2>
+        <div class='contact-form'>
+          <form action="https://submit-form.com/MjrcYKag" target="_self">
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="d-column">
+                <label for="formControlInput">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+            <div class="d-column">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control " placeholder="name@example.com">
+            </div>
+            <div class="d-column contact-button">
+              <button type="submit" name="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
       </section>
   </main>
   <script src="./src/javascript/app.js"></script>

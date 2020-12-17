@@ -1,0 +1,31 @@
+@import './variables';
+
+#contact {
+  margin-top: 3rem;
+  height: fit-content;
+  padding: 2rem;
+  h2 {
+    margin: 1rem 0;
+    font-size: 3rem;
+    color: $letters;
+  }
+  .contact-form {
+    padding: 1rem;
+    background: $fithbg;
+    border-radius: 1.5rem;
+    label {
+      color: whitesmoke;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      margin: .5rem 0;
+    }
+    input {
+      margin: .5rem 0;
+    }
+    .contact-button {
+      button {
+        margin: 2rem 0;
+      }
+    }
+  }
+}

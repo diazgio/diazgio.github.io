@@ -3,13 +3,25 @@
 #about {
   margin-top: 2rem;
   height: fit-content;
+  h1 {
+    color: $letters;
+    font-size: 3rem;
+  }
+  .about-container {
+    .about-info {
+      p {
+        color: $letters;
+        font-size: 1.5rem;
+      }
+    }
+  }
   @include responsive1 {
     .about-container {
       .about-info {
-        margin: 2rem;
+        margin: 3rem;
       }
       .about-button {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         text-align: center;
         a {
           padding: 1rem;
@@ -28,7 +40,7 @@
         width: 80%;
         background: $fourthbg;
         padding: 1rem;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
         border-radius: 7px;
         .about-skills {
           text-align: center;

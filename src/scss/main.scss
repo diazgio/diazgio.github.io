@@ -6,13 +6,14 @@
 @import './intro';
 @import './projects';
 @import './about';
+@import './contact';
 
 //------ Common styles-----------
 
 *,
 *::before,
 *::after {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
