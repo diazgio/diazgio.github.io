@@ -90,7 +90,8 @@
       .modal-box {
         .no-problem-close,
         .cosplay-close,
-        .consultly-close {
+        .consultly-close,
+        .memo-close {
           color: $secondbg;
           float: right;
           font-size: 28px;
@@ -115,7 +116,8 @@
         
         .no-proSlides,
         .cosplaySlides,
-        .consultlySlides {
+        .consultlySlides,
+        .memoSlides {
           display: none;
           text-align: center;
           img {
@@ -177,7 +179,8 @@
           }
           .no-pro-dot,
           .cosplay-dot,
-          .consultly-dot {
+          .consultly-dot,
+          .memo-dot {
             cursor: pointer;
             height: 5rem;
             width: 7rem;

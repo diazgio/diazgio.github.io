@@ -118,7 +118,7 @@ function showSlidesCo(n) {
   var i;
   var slides = document.getElementsByClassName('consultlySlides');
   var dots = document.getElementsByClassName('consultly-dot');
-  if (n > slides.length) {cslideIndex = 1}
+  if (n > slides.length) {coslideIndex = 1}
     if (n < 1) {coslideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
@@ -128,4 +128,48 @@ function showSlidesCo(n) {
     }
   slides[coslideIndex - 1].style.display = 'block';
   dots[coslideIndex - 1].className += ' active';
+}
+
+// Memorize modal and Slider --------------
+var memodal = document.getElementById('memorizeModal');
+var mebtn = document.getElementById('memoBtn');
+var mespan = document.getElementsByClassName('memo-close')[0];
+
+// Get the modal -------------------
+
+// When user clicks on the button, open the modal
+mebtn.onclick = function() {
+  memodal.style.display = 'block';
+}
+
+// When the user clicks on (x), close the modal
+mespan.onclick = function() {
+  memodal.style.display = 'none'
+}
+
+let meslideIndex = 1;
+showSlidesM(meslideIndex);
+
+function plusSlidesM(n) {
+  showSlidesM(meslideIndex += n);
+}
+
+function currentSlideM(n) {
+  showSlidesM(meslideIndex = n);
+}
+
+function showSlidesM(n) {
+  var i;
+  var slides = document.getElementsByClassName('memoSlides');
+  var dots = document.getElementsByClassName('memo-dot');
+  if (n > slides.length) {meslideIndex = 1}
+    if (n < 1) {meslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+  slides[meslideIndex - 1].style.display = 'block';
+  dots[meslideIndex - 1].className += ' active';
 }
