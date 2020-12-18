@@ -173,3 +173,91 @@ function showSlidesM(n) {
   slides[meslideIndex - 1].style.display = 'block';
   dots[meslideIndex - 1].className += ' active';
 }
+
+// SDP modal and Slider --------------
+var smodal = document.getElementById('sdpModal');
+var sbtn = document.getElementById('sdpBtn');
+var sspan = document.getElementsByClassName('sdp-close')[0];
+
+// Get the modal -------------------
+
+// When user clicks on the button, open the modal
+sbtn.onclick = function() {
+  smodal.style.display = 'block';
+}
+
+// When the user clicks on (x), close the modal
+sspan.onclick = function() {
+  smodal.style.display = 'none'
+}
+
+let sslideIndex = 1;
+showSlidesS(sslideIndex);
+
+function plusSlidesS(n) {
+  showSlidesS(sslideIndex += n);
+}
+
+function currentSlideS(n) {
+  showSlidesS(sslideIndex = n);
+}
+
+function showSlidesS(n) {
+  var i;
+  var slides = document.getElementsByClassName('sdpSlides');
+  var dots = document.getElementsByClassName('sdp-dot');
+  if (n > slides.length) {sslideIndex = 1}
+    if (n < 1) {sslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+  slides[sslideIndex - 1].style.display = 'block';
+  dots[sslideIndex - 1].className += ' active';
+}
+
+// MusicBot modal and Slider --------------
+var bmodal = document.getElementById('musicModal');
+var bbtn = document.getElementById('musicBtn');
+var bspan = document.getElementsByClassName('music-close')[0];
+
+// Get the modal -------------------
+
+// When user clicks on the button, open the modal
+bbtn.onclick = function() {
+  bmodal.style.display = 'block';
+}
+
+// When the user clicks on (x), close the modal
+bspan.onclick = function() {
+  bmodal.style.display = 'none'
+}
+
+let bslideIndex = 1;
+showSlidesB(bslideIndex);
+
+function plusSlidesB(n) {
+  showSlidesB(bslideIndex += n);
+}
+
+function currentSlideB(n) {
+  showSlidesB(bslideIndex = n);
+}
+
+function showSlidesB(n) {
+  var i;
+  var slides = document.getElementsByClassName('musicSlides');
+  var dots = document.getElementsByClassName('music-dot');
+  if (n > slides.length) {bslideIndex = 1}
+    if (n < 1) {bslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+  slides[bslideIndex - 1].style.display = 'block';
+  dots[bslideIndex - 1].className += ' active';
+}

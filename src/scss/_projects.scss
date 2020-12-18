@@ -91,7 +91,9 @@
         .no-problem-close,
         .cosplay-close,
         .consultly-close,
-        .memo-close {
+        .memo-close,
+        .sdp-close,
+        .music-close {
           color: $secondbg;
           float: right;
           font-size: 28px;
@@ -117,7 +119,9 @@
         .no-proSlides,
         .cosplaySlides,
         .consultlySlides,
-        .memoSlides {
+        .memoSlides,
+        .sdpSlides,
+        .musicSlides {
           display: none;
           text-align: center;
           img {
@@ -180,7 +184,9 @@
           .no-pro-dot,
           .cosplay-dot,
           .consultly-dot,
-          .memo-dot {
+          .memo-dot,
+          .sdp-dot,
+          .music-dot {
             cursor: pointer;
             height: 5rem;
             width: 7rem;
