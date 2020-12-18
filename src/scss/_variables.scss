@@ -5,7 +5,7 @@ $fourthbg: #F5F8FD;
 $fithbg: linear-gradient(234.04deg, #7F38DA 0%, #4052F0 71.02%);
 $letters: #4F5461;
 @mixin responsive1 {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 850px) {
     @content;
   }
 }

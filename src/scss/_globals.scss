@@ -9,7 +9,7 @@
 }
 
 .btn {
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 5px;
   width: fit-content;
   height: fit-content;
@@ -17,6 +17,11 @@
   color: whitesmoke;
   background: $primerbg;
   border: none;
+  font-weight: bolder;
+  text-decoration: none;
+  @include responsive1 {
+    padding: 0.5rem;
+  }
 }
 
 .d-column{

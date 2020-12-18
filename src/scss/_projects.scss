@@ -14,7 +14,7 @@
   .p-card {
     padding: 1rem;
     width: 47%;
-    height: 20rem;
+    height: 40rem;
     box-shadow: 2px 5px 15px -1px rgba(0,0,0,0.72);
     border-radius: 5px;
     margin: 1rem;
@@ -28,13 +28,21 @@
       font-weight: bolder;
       width: fit-content;
       margin: 0;
-      padding: 0.5rem;
+      padding: 1rem;
       border-radius: 5px;
+      font-size: 2.5rem;
+      @include responsive1 {
+        padding: 0.5rem;
+      }
     }
     .p-info {
       text-align: end;
       button {
-        margin: 11rem 0 0 0;
+        cursor: pointer;
+        margin: 30rem 0 0 0;
+        @include responsive1 {
+          margin: 11rem 0 0 0;
+        }
       }
     }
   }
@@ -83,11 +91,17 @@
       padding: 20px;
       border: 1px solid #888;
       border-radius: 1rem;
-      width: 85%;
+      width: 75%;
+      height: 65rem;
       @include responsive1 {
+        width: 85%;
+        height: 60%;
         padding: 2rem;
       }
       .modal-box {
+        h1 {
+          margin-bottom: 1rem;
+        }
         .no-problem-close,
         .cosplay-close,
         .consultly-close,
@@ -96,7 +110,7 @@
         .music-close {
           color: $secondbg;
           float: right;
-          font-size: 28px;
+          font-size: 30px;
           font-weight: bold;
           @include responsive1 {
             font-size: 3rem;
@@ -127,7 +141,7 @@
           img {
             border-radius: 1.5rem;
             width: 100%;
-            height: 27rem;
+            height: 37rem;
             @include responsive1 {
               height: 17rem;
             }
@@ -153,13 +167,14 @@
           position: absolute;
           top: 50%;
           width: auto;
-          margin-top: -30px;
+          margin-top: 10px;
           padding: 16px;
           color: #888;
           font-weight: bold;
           font-size: 20px;
           border-radius: 0 3px 3px 0;
           user-select: none;
+          font-size: 3rem;
           @include responsive1 {
             font-size: 1.5rem;
           }
@@ -176,7 +191,8 @@
         div {
           position: absolute;
           width: 80%;
-          top: -2rem;
+          top: 8rem;
+          left: 40%;
           @include responsive1 {
             left: 25%;
             top: -1rem;
@@ -188,8 +204,8 @@
           .sdp-dot,
           .music-dot {
             cursor: pointer;
-            height: 5rem;
-            width: 7rem;
+            height: 7rem;
+            width: 9rem;
             margin: 0 2px;
             border: none;
             display: inline-block;
@@ -203,20 +219,29 @@
         }
       }
       .modal-info {
-        margin-top: 3rem;
+        margin-top: 17rem;
         padding: 2rem 4rem 0 4rem;
         text-align: justify;
         p {
           padding: 0 2rem;
           text-align: justify;
           width: 80%;
+          font-size: 1.7rem;
+          @include responsive1 {
+            font-size: 1.5rem;
+          }
         }
         a {
           margin: .5rem 3rem 0 0;
           justify-content: center;
+          font-size: 1.7rem;
           @include responsive1 {
+            font-size: 1.5rem;
             margin: .5rem 1rem 0 0;
           }
+        }
+        @include responsive1 {
+          margin-top: 3rem;
         }
       }
     }
