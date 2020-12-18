@@ -85,3 +85,47 @@ function showSlidesC(n) {
   slides[cslideIndex - 1].style.display = 'block';
   dots[cslideIndex - 1].className += ' active';
 }
+
+// Consultly modal and Slider --------------
+var comodal = document.getElementById('consultlyModal');
+var cobtn = document.getElementById('consultlyBtn');
+var cospan = document.getElementsByClassName('consultly-close')[0];
+
+// Get the modal -------------------
+
+// When user clicks on the button, open the modal
+cobtn.onclick = function() {
+  comodal.style.display = 'block';
+}
+
+// When the user clicks on (x), close the modal
+cospan.onclick = function() {
+  comodal.style.display = 'none'
+}
+
+let coslideIndex = 1;
+showSlidesCo(coslideIndex);
+
+function plusSlidesCo(n) {
+  showSlidesCo(coslideIndex += n);
+}
+
+function currentSlideCo(n) {
+  showSlidesCo(coslideIndex = n);
+}
+
+function showSlidesCo(n) {
+  var i;
+  var slides = document.getElementsByClassName('consultlySlides');
+  var dots = document.getElementsByClassName('consultly-dot');
+  if (n > slides.length) {cslideIndex = 1}
+    if (n < 1) {coslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+  slides[coslideIndex - 1].style.display = 'block';
+  dots[coslideIndex - 1].className += ' active';
+}
