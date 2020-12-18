@@ -108,6 +108,7 @@
         .memo-close,
         .sdp-close,
         .music-close {
+          cursor: pointer;
           color: $secondbg;
           float: right;
           font-size: 30px;
