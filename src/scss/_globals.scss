@@ -10,6 +10,7 @@
 
 .btn {
   padding: 1rem;
+  margin: 0;
   border-radius: 5px;
   width: fit-content;
   height: fit-content;
@@ -31,7 +32,7 @@
 }
 
 main {
-  width: 83%;
+  width: 80vw;
   @include responsive1 {
     width: 100%;
   }

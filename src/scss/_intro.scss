@@ -2,18 +2,16 @@
 
 #intro {
   position: relative;
-  height: 45rem;
+  height: 100vh;
   width: 100%;
   padding: 5rem;
   background: $primerbg;
-  border-radius: 0 10rem 0 10rem;
   .intro-header {
     .intro-title {
       margin-bottom: 4rem;
       h1 {
         color: whitesmoke;
         font-size: 7rem;
-        text-decoration: underline;
       }
     }
     .intro-details{
@@ -22,9 +20,6 @@
         color: whitesmoke;
         font-size: 2rem;
         font-weight: bolder;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
     .intro-message {

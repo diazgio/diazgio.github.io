@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://kit.fontawesome.com/e4c4b9b250.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/css/main.min.css">
-    <title>Document</title>
+    <title>Giordano Díaz</title>
 </head>
 <body>
   <nav class='navbar-menu'>
@@ -14,7 +14,7 @@
       </div>
       <ul class='menu'>
           <li><a href="#intro" class='menu-items'>Intro</a></li>
-          <li><a href="#projects" class='menu-items'>Portfolio</a></li>
+          <li><a href="#projects" class='menu-items'>Projects</a></li>
           <li><a href="#about" class='menu-items'>About</a></li>
           <li><a href="#contact" class='menu-items'>Contact</a></li>
       </ul>
@@ -36,7 +36,7 @@
             </p>
           </div>
           <div class='intro-social'>
-              <a href="https://www.facebook.com/GiorDiaz93" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://stackoverflow.com/users/story/15403606?newreg=278b3d659a6d4a7298baef0b4731c740&_=1" target="_blank"><i class="fab fa-stack-overflow"></i></a>
               <a href="https://github.com/diazgio" target="_blank"><i class="fab fa-github"></i></a>
               <a href="https://twitter.com/giordano_diaz" target="_blank"><i class="fab fa-twitter"></i></a>
               <a href="https://www.linkedin.com/in/giordano-diaz/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -44,257 +44,236 @@
         </div>
       </section>
       <section class='projects' id='projects'>
-        <h1>My Work</h1>
-        <div class='big-container d-flex'>
-          <div class='no-pro p-card'>
-            <h2 class='p-card-title'>No Problem</h2>
-            <div class='p-info'>
-              <button id='no-proBtn' class='btn'>More Info</button>
+        <h1>My Projects</h1>
+        <div class='big-container'>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides0">
+                <img src="./src/img/js-capstone/game.gif" alt="jscapstone">
+              </div>
+              <div class="projSlides0">
+                <img src="./src/img/js-capstone/options.png" alt="jscapstone">
+              </div>
+              <div class="projSlides0">
+                <img src="./src/img/js-capstone/ranking.png" alt="jscapstone">
+              </div>
             </div>
-          </div>
-          <div id='no-proModal' class='modal'>
-            <div class="modal-content">
-              <div class="d-flex space-between modal-box">
-                <h1>No Problem</h1>
-                <span class="no-problem-close">&times;</span>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/js-capstone/game.gif" alt="jscapstone" class="jscapstone-dot" onclick="currentSlideJs(1)">
+                <img src="./src/img/js-capstone/options.png" alt="jscapstone" class="jscapstone-dot" onclick="currentSlideJs(2)">
+                <img src="./src/img/js-capstone/ranking.png" alt="jscapstone" class="jscapstone-dot" onclick="currentSlideJs(3)">
               </div>
-              <div class="slidershow-container">
-                <div class="no-proSlides">
-                  <img src="./src/img/no-pro/categ.png" alt="noproblem">
-                  <h3>No problem</h3>
-                </div>
-
-                <div class="no-proSlides">
-                  <img src="./src/img/no-pro/logpage.png" alt="noproblem">
-                  <h3>No problem</h3>
-                </div>
-
-                <div class="no-proSlides">
-                  <img src="./src/img/no-pro/no-prob.png" alt="noproblem">
-                  <h3>No problem</h3>
-                </div>
-
-                <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
-                <a class='next' onclick='plusSlides(1)'>&#10095;</a>
-              </div>
-              <div class="dot-container">
-                <div>
-                  <img src="./src/img/no-pro/categ.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(1)">
-                  <img src="./src/img/no-pro/logpage.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(2)">
-                  <img src="./src/img/no-pro/no-prob.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(3)">
-                </div>
-              </div>
-              <div class='d-flex space-between modal-info'>
-                <p>
-                  No problem app, it's a social media web app to share your concerns and find help of all the comunity. It was created with ruby on rails, bootstrap, active storage and aws for image handling
-                </p>
-                <div class="d-column">
-                  <a href="https://guarded-mesa-08722.herokuapp.com/" target="_blank" class="btn">Demo</a>
-                  <a href="https://github.com/diazgio/No-Problem-Capstone" target="_blank" class="btn">Source</a>
-                </div>
+            </div>
+            <div class="info-container">
+              <h3>JavaScript ES6 | Node | Webpack | Phaser 3</h3>
+              <h2>Peque in The Candy World</h2>
+              <p>
+                This is a platformer, build it with JavaScript ES6 and Phaser 3, where you can collect stars, climb floors, and defeat enemies.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://sharp-clarke-b3b6a5.netlify.app/" target="_blank">Live Demo</a>
+                <a class="btn" href="https://github.com/diazgio/JS-Capstone" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
-          <div class='cosplay p-card'>
-            <h2 class='p-card-title'>Cosplay-shop</h2>
-            <div class='p-info'>
-              <button id='cosplayBtn' class='btn'>More Info</button>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides">
+                <img src="./src/img/no-pro/logpage.png" alt="noproblemapp">
+              </div>
+              <div class="projSlides">
+                <img src="./src/img/no-pro/no-prob.png" alt="noproblemapp">
+              </div>
+              <div class="projSlides">
+                <img src="./src/img/no-pro/categ.png" alt="noproblemapp">
+              </div>
             </div>
-          </div>
-          <div id='cosplayModal' class='modal'>
-            <div class="modal-content">
-              <div class="d-flex space-between modal-box">
-                <h1>Cosplay Shop</h1>
-                <span class="cosplay-close">&times;</span>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/no-pro/logpage.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(1)">
+                <img src="./src/img/no-pro/no-prob.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(2)">
+                <img src="./src/img/no-pro/categ.png" alt="noproblem" class="no-pro-dot" onclick="currentSlide(3)">
               </div>
-              <div class="slidershow-container">
-                <div class="cosplaySlides">
-                  <img src="./src/img/cosplay-shop/cosplay1.png" alt="noproblem">
-                  <h3>Cosplay Shop</h3>
-                </div>
-
-                <div class="cosplaySlides">
-                  <img src="./src/img/cosplay-shop/cosplay2.png" alt="noproblem">
-                  <h3>Cosplay shop</h3>
-                </div>
-
-                <div class="cosplaySlides">
-                  <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="noproblem">
-                  <h3>Cosplay shop</h3>
-                </div>
-
-                <a class='prev' onclick='plusSlidesC(-1)'>&#10094;</a>
-                <a class='next' onclick='plusSlidesC(1)'>&#10095;</a>
-              </div>
-              <div class="dot-container">
-                <div>
-                  <img src="./src/img/cosplay-shop/cosplay1.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(1)">
-                  <img src="./src/img/cosplay-shop/cosplay2.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(2)">
-                  <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="cosplay" class="cosplay-dot" onclick="currentSlideC(3)">
-                </div>
-              </div>
-              <div class='d-flex space-between modal-info'>
-                <p>
-                  Cosplay-shop was created as part of html and css capstone from Microver's program, show the manage of html, css, UI/UX adn my passion for anime and cosplay.
-                </p>
-                <div class="d-column">
-                  <a href="https://diazgio.github.io/Cosplay-shop-capstone/index.html" target="_blank" class="btn">Demo</a>
-                  <a href="https://github.com/diazgio/Cosplay-shop-capstone" target="_blank" class="btn">Source</a>
-                </div>
+            </div>
+            <div class="info-container">
+              <h3>Ruby | Ruby On Rails | JavaScript</h3>
+              <h2>No problem!</h2>
+              <p>
+                No problem app, it's a social media web app to share your concerns and find help of all the comunity. It was created with ruby on rails, bootstrap, active storage and aws for image handling
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://guarded-mesa-08722.herokuapp.com/" target="_blank">Live Demo</a>
+                <a class="btn" href="https://github.com/diazgio/No-Problem-Capstone" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
-          <div class='consultly p-card'>
-            <h2 class='p-card-title'>Consultly</h2>
-            <div class='p-info'>
-              <button id='consultlyBtn' class='btn'>More Info</button>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides2">
+                <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="cosplayshop">
+              </div>
+              <div class="projSlides2">
+                <img src="./src/img/cosplay-shop/cosplay1.png" alt="cosplayshop">
+              </div>
+              <div class="projSlides2">
+                <img src="./src/img/cosplay-shop/cosplay2.png" alt="cosplayshop">
+              </div>
             </div>
-          </div>
-          <div id='consultlyModal' class='modal'>
-            <div class="modal-content">
-              <div class="d-flex space-between modal-box">
-                <h1>Consultly</h1>
-                <span class="consultly-close">&times;</span>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/cosplay-shop/cosplay-shop.png" alt="cosplayshop" class="cosplay-dot" onclick="currentSlideC(1)">
+                <img src="./src/img/cosplay-shop/cosplay1.png" alt="cosplayshop" class="cosplay-dot" onclick="currentSlideC(2)">
+                <img src="./src/img/cosplay-shop/cosplay2.png" alt="cosplayshop" class="cosplay-dot" onclick="currentSlideC(3)">
               </div>
-              <div class="slidershow-container">
-                <div class="consultlySlides">
-                  <img src="./src/img/consultly/consultly.png" alt="consultly">
-                  <h3>Consultly</h3>
-                </div>
-
-                <div class="consultlySlides">
-                  <img src="./src/img/consultly/login.png" alt="consultly">
-                  <h3>Consultly</h3>
-                </div>
-
-                <div class="consultlySlides">
-                  <img src="./src/img/consultly/root.png" alt="consultly">
-                  <h3>Consultly</h3>
-                </div>
-
-                <a class='prev' onclick='plusSlidesCo(-1)'>&#10094;</a>
-                <a class='next' onclick='plusSlidesCo(1)'>&#10095;</a>
-              </div>
-              <div class="dot-container">
-                <div>
-                  <img src="./src/img/consultly/consultly.png" alt="cosplay" class="consultly-dot" onclick="currentSlideCo(1)">
-                  <img src="./src/img/consultly/login.png" alt="cosplay" class="consultly-dot" onclick="currentSlideCo(2)">
-                  <img src="./src/img/consultly/root.png" alt="cosplay" class="consultly-dot" onclick="currentSlideCo(3)">
-                </div>
-              </div>
-              <div class='d-flex space-between modal-info'>
-                <p>
-                  Consultly is a web app created following youtube tutorials, created to implement payment gateway with Stripe and management of meetings as well as interaction between users.
-                </p>
-                <div class="d-column">
-                  <a href="https://github.com/diazgio/Consultly" target="_blank" class="btn">Source</a>
-                </div>
+            </div>
+            <div class="info-container">
+              <h3>HTML | CSS | Grid | Flexbox</h3>
+              <h2>Cosplay Shop</h2>
+              <p>
+                Cosplay-shop was created as part of html and css capstone from Microver's program, show the manage of html, css, UI/UX adn my passion for anime and cosplay.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://diazgio.github.io/Cosplay-shop-capstone/index.html" target="_blank">Live Demo</a>
+                <a class="btn" href="https://github.com/diazgio/Cosplay-shop-capstone" target="_blank" >GitHub</a>
               </div>
             </div>
           </div>
-          <div class='memorize p-card'>
-            <h2 class='p-card-title'>Memorizing</h2>
-            <div class='p-info'>
-              <button id='memoBtn' class='btn'>More Info</button>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides3">
+                <img src="./src/img/consultly/consultly.png" alt="consultly">
+              </div>
+              <div class="projSlides3">
+                <img src="./src/img/consultly/login.png" alt="consultly">
+              </div>
+              <div class="projSlides3">
+                <img src="./src/img/consultly/root.png" alt="consultly">
+              </div>
             </div>
-          </div>
-          <div id='memorizeModal' class='modal'>
-            <div class="modal-content">
-              <div class="d-flex space-between modal-box">
-                <h1>Memorize</h1>
-                <span class="memo-close">&times;</span>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/consultly/consultly.png" alt="consultly" class="consultly-dot" onclick="currentSlideCo(1)">
+                <img src="./src/img/consultly/login.png" alt="consultly" class="consultly-dot" onclick="currentSlideCo(2)">
+                <img src="./src/img/consultly/root.png" alt="consultly" class="consultly-dot" onclick="currentSlideCo(3)">
               </div>
-              <div class="slidershow-container">
-                <div class="memoSlides">
-                  <img src="./src/img/memorize/memo2.png" alt="memorize">
-                  <h3>Memorize</h3>
-                </div>
-
-                <div class="memoSlides">
-                  <img src="./src/img/memorize/memori1.png" alt="memorize">
-                  <h3>Memorize</h3>
-                </div>
-
-                <div class="memoSlides">
-                  <img src="./src/img/memorize/memorize.png" alt="memorize">
-                  <h3>Memorize</h3>
-                </div>
-
-                <a class='prev' onclick='plusSlidesM(-1)'>&#10094;</a>
-                <a class='next' onclick='plusSlidesM(1)'>&#10095;</a>
-              </div>
-              <div class="dot-container">
-                <div>
-                  <img src="./src/img/memorize/memo2.png" alt="cosplay" class="memo-dot" onclick="currentSlideM(1)">
-                  <img src="./src/img/memorize/memori1.png" alt="cosplay" class="memo-dot" onclick="currentSlideM(2)">
-                  <img src="./src/img/memorize/memorize.png" alt="cosplay" class="memo-dot" onclick="currentSlideM(3)">
-                </div>
-              </div>
-              <div class='d-flex space-between modal-info'>
-                <p>
-                  Memorize is a small game made entirely with JavaScript to put into practice all the basic knowledge, it is a project given in Platzi.
-                </p>
-                <div class="d-column">
-                  <a href="https://github.com/diazgio/Consultly" target="_blank" class="btn">Source</a>
-                </div>
+            </div>
+            <div class="info-container">
+              <h3>Ruby | Ruby On Rails</h3>
+              <h2>Consultly</h2>
+              <p>
+                Consultly is a web app created following youtube tutorials, created to implement payment gateway with Stripe and management of meetings as well as interaction between users.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href=https://github.com/diazgio/Consultly" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
-          <div class='sdp p-card'>
-            <h2 class='p-card-title'>SDP</h2>
-            <div class='p-info'>
-              <button id='sdpBtn' class='btn'>More Info</button>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides4">
+                <img src="./src/img/memorize/memorize.png" alt="memorize">
+              </div>
+              <div class="projSlides4">
+                <img src="./src/img/memorize/memori1.png" alt="memorize">
+              </div>
+              <div class="projSlides4">
+                <img src="./src/img/memorize/memo2.png" alt="memorize">
+              </div>
             </div>
-          </div>
-          <div id='sdpModal' class='modal'>
-            <div class="modal-content">
-              <div class="d-flex space-between modal-box">
-                <h1>Sdp</h1>
-                <span class="sdp-close">&times;</span>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/memorize/memorize.png" alt="memorize" class="memorize-dot" onclick="currentSlideMe(1)">
+                <img src="./src/img/memorize/memori1.png" alt="memorize" class="memorize-dot" onclick="currentSlideMe(2)">
+                <img src="./src/img/memorize/memo2.png" alt="memorize" class="memorize-dot" onclick="currentSlideMe(3)">
               </div>
-              <div class="slidershow-container">
-                <div class="sdpSlides">
-                  <img src="./src/img/sdp/sdp.png" alt="sdp">
-                  <h3>Sdp</h3>
-                </div>
-
-                <div class="sdpSlides">
-                  <img src="./src/img/sdp/sdp1.png" alt="sdp">
-                  <h3>Sdp</h3>
-                </div>
-
-                <div class="sdpSlides">
-                  <img src="./src/img/sdp/sdp2.png" alt="sdp">
-                  <h3>Sdp</h3>
-                </div>
-
-                <a class='prev' onclick='plusSlidesS(-1)'>&#10094;</a>
-                <a class='next' onclick='plusSlidesS(1)'>&#10095;</a>
-              </div>
-              <div class="dot-container">
-                <div>
-                  <img src="./src/img/sdp/sdp.png" alt="sdp" class="sdp-dot" onclick="currentSlideS(1)">
-                  <img src="./src/img/sdp/sdp1.png" alt="sdp" class="sdp-dot" onclick="currentSlideS(2)">
-                  <img src="./src/img/sdp/sdp2.png" alt="sdp" class="sdp-dot" onclick="currentSlideS(3)">
-                </div>
-              </div>
-              <div class='d-flex space-between modal-info'>
-                <p>
-                  Sdp is a landing page, my first freelance job, created for the advertising associations of Peru for the registration of a large-scale event carried out entirely virtually.
-                </p>
-                <div class="d-column">
-                  <a href="https://intense-bayou-77580.herokuapp.com/" target="_blank" class="btn">Demo</a>
-                </div>
+            </div>
+            <div class="info-container">
+              <h3>Ruby | Ruby On Rails</h3>
+              <h2>Memorize</h2>
+              <p>
+                Video games fully encoded in JavaScript ES6. You have to click on the color to light and memorize the sequence.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://diazgio.github.io/Memorizing-JS-game/" target="_blank">Live Demo</a>
+                <a class="btn" href="https://github.com/diazgio/Memorizing-JS-game" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
-          <div class='music p-card'>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides5">
+                <img src="./src/img/sdp/sdp.png" alt="sdp">
+              </div>
+              <div class="projSlides5">
+                <img src="./src/img/sdp/sdp1.png" alt="sdp">
+              </div>
+              <div class="projSlides5">
+                <img src="./src/img/sdp/sdp2.png" alt="sdp">
+              </div>
+            </div>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/sdp/sdp.png" alt="sdp" class="sdp-dot" onclick="currentSlideSd(1)">
+                <img src="./src/img/sdp/sdp1.png" alt="sdp" class="sdp-dot" onclick="currentSlideSd(2)">
+                <img src="./src/img/sdp/sdp2.png" alt="sdp" class="sdp-dot" onclick="currentSlideSd(3)">
+              </div>
+            </div>
+            <div class="info-container">
+              <h3>Ruby | Ruby On Rails</h3>
+              <h2>Sdp</h2>
+              <p>
+                Sdp is a landing page, my first freelance job, created for the advertising associations of Peru for the registration of a large-scale event carried out entirely virtually.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://intense-bayou-77580.herokuapp.com/" target="_blank" >Live Demo</a>
+                <a class="btn" href="https://github.com/diazgio/Sdp-project" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="innerSlide-container">
+              <div class="projSlides6">
+                <img src="./src/img/music-bot/music-bot.png" alt="music">
+              </div>
+              <div class="projSlides6">
+                <img src="./src/img/music-bot/music1.png" alt="music">
+              </div>
+              <div class="projSlides6">
+                <img src="./src/img/music-bot/music2.png" alt="music">
+              </div>
+            </div>
+            <div class="dot-container">
+              <div>
+                <img src="./src/img/music-bot/music-bot.png" alt="music" class="music-dot" onclick="currentSlideMs(1)">
+                <img src="./src/img/music-bot/music1.png" alt="music" class="music-dot" onclick="currentSlideMs(2)">
+                <img src="./src/img/music-bot/music2.png" alt="music" class="music-dot" onclick="currentSlideMs(3)">
+              </div>
+            </div>
+            <div class="info-container">
+              <h3>Ruby | Ruby On Rails</h3>
+              <h2>Music Bot</h2>
+              <p>
+                Music Bot is a project created entirely with ruby as part of the capstone of the ruby module of the Microverse program, it is a telegram bot which, depending on your emotional state, gives you different music playlists on YouTube.
+              </p>
+              <div class="buttons-container">
+                <a class="btn" href="https://github.com/diazgio/music-motivation-bot" target="_blank" >GitHub</a>
+              </div>
+            </div>
+          </div>
+          <a class='prev' onclick='plusSlidesMain(-1)'>&#10094;</a>
+          <a class='next' onclick='plusSlidesMain(1)'>&#10095;</a>
+          
+          
+          
+          
+          <!-- <div class='music p-card'>
             <h2 class='p-card-title'>Music bot</h2>
             <div class='p-info'>
               <button id='musicBtn' class='btn'>More Info</button>
             </div>
-          </div>
-          <div id='musicModal' class='modal'>
+          </div> -->
+          <!-- <div id='musicModal' class='modal'>
             <div class="modal-content">
               <div class="d-flex space-between modal-box">
                 <h1>Music Bot</h1>
@@ -335,7 +314,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class='about' id='about'>
@@ -405,16 +384,28 @@
                 <input type="text" class="form-control" placeholder="First name">
               </div>
             </div>
+
             <div class="form-group">
               <div class="d-column">
                 <label for="formControlInput">Last Name</label>
                 <input type="text" class="form-control" placeholder="Last name">
               </div>
             </div>
-            <div class="d-column">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control " placeholder="name@example.com">
+
+            <div class="form-group">
+              <div class="d-column">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control " placeholder="name@example.com">
+              </div>
             </div>
+
+            <div class="form-group">
+              <div class="d-column">
+                <label for="messageControlFormInput">Leave your Message!</label>
+                <textarea class="messagearea"type="text" name="message" id="message" cols="30" rows="10" placeholder="Leave your message here!"></textarea>
+              </div>
+            </div>
+
             <div class="d-column contact-button">
               <button type="submit" name="submit" class="btn">Submit</button>
             </div>

@@ -13,19 +13,26 @@
     padding: 1rem;
     background: $fithbg;
     border-radius: 1.5rem;
-    label {
-      color: whitesmoke;
-      font-weight: bolder;
-      font-size: 1.5rem;
-      margin: .5rem 0;
-    }
-    input {
-      margin: .5rem 0;
-    }
-    .contact-button {
-      button {
-        cursor: pointer;
-        margin: 2rem 0;
+    form {
+      .form-group {
+        label {
+          color: whitesmoke;
+          font-weight: bolder;
+          font-size: 1.5rem;
+          margin: .5rem 0;
+        }
+        input {
+          margin: .5rem 0;
+        }
+        .messagearea {
+          margin: 0 auto !important;
+        }
+      }
+      .contact-button {
+        button {
+          cursor: pointer;
+          margin: 2rem 0;
+        }
       }
     }
   }
