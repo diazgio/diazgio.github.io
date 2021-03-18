@@ -103,4 +103,8 @@
       }
     }
   }
+  @include responsive3 {
+    width: 100vw;
+    height: 100vh;
+  }
 }

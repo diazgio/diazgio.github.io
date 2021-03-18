@@ -62,4 +62,76 @@
   @include responsive2 {
     width: 25vw;
   }
+  @include responsive3 {
+    position: fixed;
+    top: 0;
+    right: 0rem;
+    z-index: 100;
+    width: 15vw;
+    height: 15vh;
+    background: $primerbg;
+    .hamburger {
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      right: 25%;
+      transform: translate(-25%, -50%);
+      cursor: pointer;
+      .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+      }
+    }
+    .namelogo {
+      display: none;
+    }
+    .menu {
+      position: fixed;
+      text-align: center;
+      width: 100vw;
+      height: 113vh;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background: $primerbg;
+      z-index: 2;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      .first-item {
+        margin-top: 25rem;
+      }
+      li {
+        opacity: 0;
+      }
+      li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+      }
+      li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+      }
+      li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+      }
+      li:nth-child(4) {
+        transition: all 0.5s ease 0.8s;
+      }
+      li.fade {
+        opacity: 1;
+        font-size: 5rem;
+        a {
+          font-size: 3rem;
+          color: white;
+        }
+      }
+    }
+    .menu.open {
+      clip-path: circle(2000px at 90% -10%);
+      -webkit-clip-path: circle(2000px at 90% -10%);
+      pointer-events: all;
+    }
+  }
 }
