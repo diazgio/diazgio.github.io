@@ -67,15 +67,16 @@
     top: 0;
     right: 0rem;
     z-index: 100;
-    width: 15vw;
-    height: 15vh;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 10px;
     background: $primerbg;
     .hamburger {
       position: absolute;
       z-index: 9;
       top: 50%;
-      right: 25%;
-      transform: translate(-25%, -50%);
+      right: 15%;
+      transform: translate(-15%, -50%);
       cursor: pointer;
       .line {
         width: 30px;
