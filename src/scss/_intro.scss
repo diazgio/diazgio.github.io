@@ -7,6 +7,7 @@
   padding: 5rem;
   background: $primerbg;
   display: flex;
+  margin: 0;
   .intro-img {
     width: 50%;
     position: relative;
@@ -65,33 +66,13 @@
     }
   }
   @include responsive1 {
-    height: fit-content;
-    z-index: 1;
-    width: 100%;
-    .intro-header {
-      .intro-title { 
-        h1 {
-          font-size: 3.3rem;
-        }
-      }
-      .intro-details {
-        p {
-          font-size: 1.8rem;
-        }
-      }
-      .intro-message {      
-        padding: 1rem; 
-        p {
-          font-size: 1.5rem;
-          font-weight: bolder;
-        }
-      }
-      .intro-social {
-        a {
-          font-size: 2rem;
-          margin-right: 1rem;
-        }
-      }
-    }
+    position: relative;
+    height: 100vh;
+    width: 80vw;
+    padding: 5rem;
+    background: $primerbg;
+    display: flex;
+    margin: 0;
+    margin-left: auto;
   }
 }

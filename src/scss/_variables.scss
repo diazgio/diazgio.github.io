@@ -7,13 +7,31 @@ $fithbg: linear-gradient(234.04deg, #7F38DA 0%, #4052F0 71.02%);
 $letters: #4F5461;
 $titles: #10516ef6;
 @mixin responsive1 {
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1440px) {
     @content;
   }
 }
 
 @mixin responsive2 {
-  @media only screen and (min-width: 426px) {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin responsive3 {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin responsive4 {
+  @media only screen and (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin responsive5 {
+  @media only screen and (max-width: 320px) {
     @content;
   }
 }

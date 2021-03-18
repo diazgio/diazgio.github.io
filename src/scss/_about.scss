@@ -2,23 +2,32 @@
 
 #about {
   height: 100vh;
+  width: 80vw;
   background: $primerbg;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   .about1 {
-    padding: 1rem 2rem;
-    margin: 1rem auto;
-    width: 90%;
+    padding: 1rem 5rem;
+    margin: 1rem;
+    width: 100%;
     .about-container {
       width: 50%;
       .about-info {
-        h1 {
+        width: 100%;
+        .title1,
+        .title2 {
           color: white;
           font-size: 6rem;
+          text-align: start;
+        }
+        .title1 {
+          margin-left: 2rem;
+        }
+        .title2 {
           margin-bottom: 2rem;
-          text-align: center;
+          margin-left: 6.5rem;
         }
         h2 {
           color: white;
@@ -44,12 +53,13 @@
       align-items: center;
       img {
         width: 40rem;
+        border: 4px solid white;
         border-radius: 15px;
       }
       .about-button {
         width: 50%;
         text-align: end;
-        margin: 4rem 0 4rem 5rem;
+        margin: 7rem 0 4rem 5rem;
         a {
           padding: 2rem;
           color: black;
@@ -58,6 +68,10 @@
           text-decoration: none;
           border-radius: 2rem;
           font-size: 1.8rem;
+          i {
+            font-size: 2rem;
+            margin-left: 1rem;
+          }
         }
       }
     }
@@ -92,37 +106,24 @@
     }
   }
   @include responsive1 {
-    .about-container {
-      .about-info {
-        margin: 3rem;
-      }
-      .about-button {
-        a {
-          padding: 1rem;
-          border-radius: 15px;
-          font-size: 1.5rem;
+    .about1 {
+      .about-container {
+        .about-info {
+          margin-top: 7rem;
+          h2 {
+            font-size: 3rem;
+          }
+          p {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+          }
         }
       }
     }
     .about-know {
-      flex-direction: column;
-      align-items: center;
+      margin: 0 auto 1rem auto;
       .about-card {
         padding: 1rem;
-        margin: 1rem 0;
-        border-radius: 7px;
-        .about-skills {
-          text-align: center;
-          .about-items {
-            margin-top: 1rem;
-            p {
-              margin-bottom: 0.5rem;
-              i {
-                margin-right: 0.5rem;
-              }
-            }
-          }
-        }
       }
     }
   }

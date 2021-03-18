@@ -1,10 +1,18 @@
 @import './variables';
 
 #contact {
-  margin-top: 3rem;
+  height: 100vh;
+  width: 80vw;
+  margin-left: auto;
+  .contact-top {
+    background: $primerbg;
+    height: 20vh;
+    width: 100%;
+  }
   .contact-container {
+    padding: 10rem 6rem;
     height: 60vh;
-    padding: 0 2rem;
+    background: white;
     .contact-form {
       padding: 1rem;
       border-radius: 1.5rem;
@@ -66,13 +74,13 @@
   }
   .footer {
     background: $primerbg;
-    height: 15vh;
+    height: 20vh;
+    padding-top: 4.5rem;
     h1 {
       color: white;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 2rem;
-
     }
     .footer-social {
       text-align: center;
@@ -81,6 +89,21 @@
         font-size: 5rem;
         margin-right: 2rem;
       }
+    }
+  }
+  @include responsive1 {
+    .contact-container {
+      padding: 2rem 6rem;
+      .contact-form {
+        margin-right: 15rem;
+      }
+      .square {
+        margin-top: 20rem;
+        height: 23rem;
+      }
+    }
+    .footer {
+      padding-top: 3.5rem;
     }
   }
 }
