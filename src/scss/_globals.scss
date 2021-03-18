@@ -20,6 +20,24 @@
   border: none;
   font-weight: bolder;
   text-decoration: none;
+  font-size: 2rem;
+  @include responsive1 {
+    padding: 0.5rem;
+  }
+}
+
+.btn2 {
+  padding: 1rem;
+  margin: 0;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  color: whitesmoke;
+  background: $secondbg;
+  border: none;
+  font-weight: bolder;
+  text-decoration: none;
   @include responsive1 {
     padding: 0.5rem;
   }

@@ -2,37 +2,82 @@
 
 #contact {
   margin-top: 3rem;
-  height: fit-content;
-  padding: 2rem;
-  h2 {
-    margin: 1rem 0;
-    font-size: 3rem;
-    color: $letters;
-  }
-  .contact-form {
-    padding: 1rem;
-    background: $fithbg;
-    border-radius: 1.5rem;
-    form {
-      .form-group {
-        label {
-          color: whitesmoke;
-          font-weight: bolder;
-          font-size: 1.5rem;
-          margin: .5rem 0;
+  .contact-container {
+    height: 60vh;
+    padding: 0 2rem;
+    .contact-form {
+      padding: 1rem;
+      border-radius: 1.5rem;
+      width: 50%;
+      h2 {
+        margin: 1rem 0;
+        font-size: 3rem;
+        color: $letters;
+      }
+      form {
+        .form-group {
+          display: flex;
+          .inputs-cont {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2rem;
+          }
+          label {
+            color: black;
+            font-weight: bolder;
+            font-size: 2rem;
+            margin: .5rem 0;
+          }
+          input {
+            margin: .5rem 0;
+            width: 30rem;
+            height: 3rem;
+          }
+          .email {
+            input {
+              width: 40rem;
+              height: 3rem;
+            }
+          }
+          .messagearea {
+            margin: 0 auto !important;
+          }
         }
-        input {
-          margin: .5rem 0;
-        }
-        .messagearea {
-          margin: 0 auto !important;
+        .contact-button {
+          button {
+            cursor: pointer;
+            margin: 2rem 0;
+            font-size: 2.2rem
+          }
         }
       }
-      .contact-button {
-        button {
-          cursor: pointer;
-          margin: 2rem 0;
-        }
+    }
+    .square {
+      margin-top: 4rem;
+      width: 50%;
+      height: 40rem;
+      background: $primerbg;
+      border-radius: 40px;
+      color: white;
+      
+    }
+  }
+  .footer {
+    background: $primerbg;
+    height: 15vh;
+    h1 {
+      color: white;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+
+    }
+    .footer-social {
+      text-align: center;
+      a {
+        color: whitesmoke;
+        font-size: 5rem;
+        margin-right: 2rem;
       }
     }
   }

@@ -6,21 +6,28 @@
   height: 100vh;
   h1 {
     color: $letters;
-    font-size: 3rem;
+    font-size: 4rem;
+    text-align: center;
+    font-size: 4rem;
   }
   .big-container{
-    margin-top: 3rem;
-    width: 100%;
-    height: 100%;
+    margin: 3rem auto 0 auto;
+    width: 80%;
+    height: 85%;
     position: relative;
     .proj-card {
+      background-color: whitesmoke;
       width: 70%;
+      height: 90%;
       margin: 0 auto;
       padding: 2rem 0;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px grey;
       .innerSlide-container {
         position: relative;
         width: 90%;
-        height: 50rem;
+        height: 40rem;
         margin: 0 auto;
 
         .projSlides0,
@@ -34,7 +41,9 @@
           width: 100%;
           img {
             width: 100%;
-            height: 40rem;
+            height: 35rem;
+            border: 3px solid #16222A;
+            border-radius: 10px;
           }
         }
       }
@@ -44,8 +53,8 @@
         div {
           position: absolute;
           width: 80%;
-          top: -10rem;
-          left: 40%;
+          top: -7rem;
+          left: 35%;
           @include responsive1 {
             left: 25%;
             top: -1rem;
@@ -61,7 +70,7 @@
             height: 7rem;
             width: 9rem;
             margin: 0 2px;
-            border: none;
+            border: 2px solid #16222A;
             display: inline-block;
             transition: border 0.6s ease;
             border-radius: 10px;
@@ -73,18 +82,27 @@
         }
       }
       .info-container {
-        margin-top: 1rem;
+        margin-top: 3rem;
         text-align: center;
         h3 {
           margin-bottom: 2rem;
+          color: rgba(94, 90, 90, 0.589);
         }
         h2 {
           margin-bottom: 2rem;
+          color: $titles;
+          font-size: 2rem;
         }
         p {
-          margin: 2rem auto;
+          margin: 2rem auto 4rem auto;
           width: 60%;
           font-size: 2rem;
+        }
+        .p-music {
+          margin: 2rem auto;
+        }
+        .star1 {
+          margin: 0 2rem;
         }
 
         .buttons-container {
@@ -93,22 +111,30 @@
           display: flex;
           justify-content: space-around;
         }
+        .buttons-container1 {
+          margin: 0 auto;
+          width: 60%;
+          display: flex;
+          justify-content: space-around;
+        }
       }
     }
     .prev {
       cursor: pointer;
+      border: 1px solid black;
       position: absolute;
-      top: 35%;
-      left: 15rem;
+      top: 40%;
+      left: 8rem;
       width: auto;
       margin-top: 10px;
-      padding: 16px;
-      color: #888;
+      padding: 14px 18px 14px 14px;
+      color: white;
       font-weight: bold;
       font-size: 20px;
-      border-radius: 0 3px 3px 0;
+      border-radius: 10px;
       user-select: none;
       font-size: 3rem;
+      background: $primerbg;
       @include responsive1 {
         font-size: 1.5rem;
       }
@@ -116,254 +142,22 @@
     .next {
       cursor: pointer;
       position: absolute;
-      top: 35%;
-      right: 15rem;
+      border: 1px solid black;
+      top: 40%;
+      right: 8rem;
       width: auto;
       margin-top: 10px;
-      padding: 16px;
-      color: #888;
+      padding: 14px 14px 14px 18px;
+      color: white;
       font-weight: bold;
       font-size: 20px;
-      border-radius: 3px 0 0 3px;
+      border-radius: 10px;
       user-select: none;
       font-size: 3rem;
+      background: $primerbg;
       @include responsive1 {
         font-size: 1.5rem;
       }
     }
   }
-  // .p-card {
-  //   padding: 1rem;
-  //   width: 47%;
-  //   height: 40rem;
-  //   box-shadow: 2px 5px 15px -1px rgba(0,0,0,0.72);
-  //   border-radius: 5px;
-  //   margin: 1rem;
-  //   @include responsive1 {
-  //     width: 95%;
-  //     height: 19.5rem;
-  //   }
-  //   .p-card-title {
-  //     color: whitesmoke;
-  //     background: $secondbg;
-  //     font-weight: bolder;
-  //     width: fit-content;
-  //     margin: 0;
-  //     padding: 1rem;
-  //     border-radius: 5px;
-  //     font-size: 2.5rem;
-  //     @include responsive1 {
-  //       padding: 0.5rem;
-  //     }
-  //   }
-  //   .p-info {
-  //     text-align: end;
-  //     button {
-  //       cursor: pointer;
-  //       margin: 30rem 0 0 0;
-  //       @include responsive1 {
-  //         margin: 11rem 0 0 0;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // .no-pro {
-  //   background-image: url("../img/no-pro/no-prob.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .cosplay {
-  //   background-image: url("../img/cosplay-shop/cosplay-shop.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .consultly {
-  //   background-image: url("../img/consultly/consultly.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .memorize {
-  //   background-image: url("../img/memorize/memorize.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .sdp {
-  //   background-image: url("../img/sdp/sdp.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .music {
-  //   background-image: url("../img/music-bot/music-bot.png");
-  //   background-position: center;
-  //   background-size: cover;
-  // }
-  // .modal {
-  //   display: block;/*Hidden by default*/
-  //   left: 0;
-  //   top: 5rem;
-  //   width: 100%;
-  //   height: 100%;
-  //   .modal-content {
-  //     background-color: whitesmoke;
-  //     margin: 2% auto;
-  //     padding: 20px;
-  //     border: 1px solid #888;
-  //     border-radius: 1rem;
-  //     width: 75%;
-  //     height: 65rem;
-  //     @include responsive1 {
-  //       width: 85%;
-  //       height: 60%;
-  //       padding: 2rem;
-  //     }
-  //     .modal-box {
-  //       h1 {
-  //         margin-bottom: 1rem;
-  //       }
-  //       .no-problem-close,
-  //       .cosplay-close,
-  //       .consultly-close,
-  //       .memo-close,
-  //       .sdp-close,
-  //       .music-close {
-  //         cursor: pointer;
-  //         color: $secondbg;
-  //         float: right;
-  //         font-size: 30px;
-  //         font-weight: bold;
-  //         @include responsive1 {
-  //           font-size: 3rem;
-  //         }
-  //       }
-  //     }
-  //     .slidershow-container {
-  //       position: relative;
-  //       background-color: whitesmoke;
-  //       margin: 0 auto;
-  //       width: 90%;
-  //       height: 27rem;
-  //       border-radius: 1.5rem;
-
-  //       @include responsive1 {
-  //         width: 100%;
-  //         height: 20rem;
-  //       }
-        
-  //       .no-proSlides,
-  //       .cosplaySlides,
-  //       .consultlySlides,
-  //       .memoSlides,
-  //       .sdpSlides,
-  //       .musicSlides {
-  //         display: none;
-  //         text-align: center;
-  //         img {
-  //           border-radius: 1.5rem;
-  //           width: 100%;
-  //           height: 37rem;
-  //           @include responsive1 {
-  //             height: 17rem;
-  //           }
-  //         }
-
-  //         h3 {
-  //           position: absolute;
-  //           top: 3rem;
-  //           right: 10rem;
-  //           color: whitesmoke;
-  //           z-index: 3;
-  //           padding: 1rem;
-  //           font-size: 1.5rem;
-  //           border-radius: 5px;
-  //           @include responsive1 {
-  //             top: 1rem;
-  //             font-size: 1.2rem;
-  //             }
-  //         }
-  //       }
-  //       .prev, .next {
-  //         cursor: pointer;
-  //         position: absolute;
-  //         top: 50%;
-  //         width: auto;
-  //         margin-top: 10px;
-  //         padding: 16px;
-  //         color: #888;
-  //         font-weight: bold;
-  //         font-size: 20px;
-  //         border-radius: 0 3px 3px 0;
-  //         user-select: none;
-  //         font-size: 3rem;
-  //         @include responsive1 {
-  //           font-size: 1.5rem;
-  //         }
-  //       }
-  //       .next {
-  //         position: absolute;
-  //         right: 0;
-  //         border-radius: 3px 0 0 3px;
-  //       }
-  //     }
-  //     .dot-container {
-  //       position: relative;
-  //       width: 100%;
-  //       div {
-  //         position: absolute;
-  //         width: 80%;
-  //         top: 8rem;
-  //         left: 40%;
-  //         @include responsive1 {
-  //           left: 25%;
-  //           top: -1rem;
-  //         }
-  //         .no-pro-dot,
-  //         .cosplay-dot,
-  //         .consultly-dot,
-  //         .memo-dot,
-  //         .sdp-dot,
-  //         .music-dot {
-  //           cursor: pointer;
-  //           height: 7rem;
-  //           width: 9rem;
-  //           margin: 0 2px;
-  //           border: none;
-  //           display: inline-block;
-  //           transition: border 0.6s ease;
-  //           border-radius: 10px;
-  //           @include responsive1 {
-  //             height: 5rem;
-  //             width: 5rem;
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .modal-info {
-  //       margin-top: 17rem;
-  //       padding: 2rem 4rem 0 4rem;
-  //       text-align: justify;
-  //       p {
-  //         padding: 0 2rem;
-  //         text-align: justify;
-  //         width: 80%;
-  //         font-size: 1.7rem;
-  //         @include responsive1 {
-  //           font-size: 1.5rem;
-  //         }
-  //       }
-  //       a {
-  //         margin: .5rem 3rem 0 0;
-  //         justify-content: center;
-  //         font-size: 1.7rem;
-  //         @include responsive1 {
-  //           font-size: 1.5rem;
-  //           margin: .5rem 1rem 0 0;
-  //         }
-  //       }
-  //       @include responsive1 {
-  //         margin-top: 3rem;
-  //       }
-  //     }
-  //   }
-  // }
 }

@@ -3,24 +3,25 @@
 
 .navbar-menu {
   position: fixed;
-  width: 20%;
+  width: 19.3vw;
   height: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: whitesmoke;
   .namelogo {
     background: $secondbg;
-    height: 8rem;
-    width: 8rem;
+    height: 12rem;
+    width: 12rem;
     border-radius: 50%;
     align-items: center;
-    padding: 1rem 1.5rem 1rem 1rem;
+    padding: 2rem;
     margin: 2rem auto;
     h1 {
       color: white;
-      font-size: 2rem;
+      font-size: 3.5rem;
       font-weight: bolder;
     }
   }
@@ -32,10 +33,11 @@
       .menu-items {
         text-decoration: none;
         margin: 0 1.5rem;
-        color: rgba(94, 90, 90, 0.623);
+        color: rgba(44, 43, 43, 0.623);
         background-color: transparent;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: bolder;
+        font-family: 'IBM Plex Sans', sans-serif;
         &:hover {
           background: $primerbg;
           color: whitesmoke;

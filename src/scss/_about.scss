@@ -1,36 +1,65 @@
 @import './variables';
 
 #about {
-  margin-top: 2rem;
-  height: fit-content;
-  padding: 2rem;
-  h1 {
-    color: $letters;
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  .about-container {
-    .about-info {
-      p {
-        color: $letters;
-        font-size: 1.8rem;
+  height: 100vh;
+  background: $primerbg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .about1 {
+    padding: 2rem;
+    margin: 2rem auto;
+    width: 90%;
+    .about-container {
+      width: 50%;
+      .about-info {
+        h1 {
+          color: white;
+          font-size: 8rem;
+          margin-bottom: 2rem;
+          text-align: start;
+        }
+        h2 {
+          color: white;
+          font-size: 4rem;
+          margin-bottom: 1rem;
+          i {
+            margin-left: 1rem;
+          }
+        }
+        p {
+          color: white;
+          font-size: 2.2rem;
+          font-weight: 500;
+        }
       }
     }
-    .about-button {
-      margin: 4rem 0;
+    .about-img {
+      width: 50%;
       text-align: center;
-      a {
-        padding: 2rem;
-        color: whitesmoke;
-        font-weight: bolder;
-        background: $secondbg;
-        text-decoration: none;
-        border-radius: 2rem;
-        font-size: 1.8rem;
+      img {
+        width: 40rem;
+        border-radius: 15px;
+      }
+      .about-button {
+        margin: 4rem 0;
+        text-align: center;
+        a {
+          padding: 2rem;
+          color: black;
+          font-weight: bolder;
+          background: white;
+          text-decoration: none;
+          border-radius: 2rem;
+          font-size: 1.8rem;
+        }
       }
     }
   }
   .about-know {
+    margin: 1rem auto;
+    width: 80%;
     justify-content: space-around;
     .about-card {
       margin: 0;

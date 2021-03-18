@@ -1,9 +1,10 @@
-$primerbg: linear-gradient(257.1deg, #AE5BD6 27.51%, #4052F0 113.53%);
-$secondbg: #4456FB;
+$primerbg: linear-gradient(257.1deg,#000046 27.51%, #1CB5E0 113.53%);
+$secondbg: #000046;
 $thridbg: rgb(182, 174, 174);
 $fourthbg: #F5F8FD;
 $fithbg: linear-gradient(234.04deg, #7F38DA 0%, #4052F0 71.02%);
 $letters: #4F5461;
+$titles: #10516ef6;
 @mixin responsive1 {
   @media only screen and (max-width: 850px) {
     @content;
