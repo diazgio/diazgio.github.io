@@ -106,4 +106,20 @@
       padding-top: 3.5rem;
     }
   }
+  @include responsive2 {
+    .contact-container {
+      .contact-form {
+        form {
+          .contact-button {
+            margin-left: 34rem;
+          }
+        }
+      }
+      .square {
+        margin-top: 0rem;
+        margin-left: 1rem;
+        height: 13rem;
+      }
+    }
+  }
 }

@@ -59,4 +59,7 @@
       background: $navbarbg;
     }
   }
+  @include responsive2 {
+    width: 25vw;
+  }
 }

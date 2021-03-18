@@ -75,4 +75,32 @@
     margin: 0;
     margin-left: auto;
   }
+  @include responsive2 {
+    width: 75vw;
+    .intro-img {
+      img {
+        top: 23%;
+        left: 6rem;
+        width: 27rem;
+      }
+    }
+    .intro-header {
+      padding-top: 8rem;
+      .intro-title {
+        margin-bottom: 3rem;
+        h1 {
+         font-size: 7rem; 
+        }
+      }
+      .intro-details {
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+      .intro-message {
+        margin-top: 10rem;
+        width: 67rem;
+      }
+    }
+  }
 }

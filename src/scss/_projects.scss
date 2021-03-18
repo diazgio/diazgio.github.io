@@ -1,7 +1,6 @@
 @import './variables';
 
 #projects {
-  margin-top: 2rem;
   padding-top: 2rem;
   height: 100vh;
   width: 80vw;
@@ -162,6 +161,22 @@
       }
       .next {
         right: 4rem;
+      }
+    }
+  }
+  @include responsive2 {
+    width: 75vw;
+    .big-container {
+      width: 89%;
+      height: 86%;
+      .proj-card {
+        width: 83%;
+      }
+      .prev {
+        left: -2rem;
+      }
+      .next {
+        right: -2rem;
       }
     }
   }
