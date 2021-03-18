@@ -4,6 +4,10 @@
   margin-top: 2rem;
   padding-top: 2rem;
   height: 100vh;
+  background-image: url(../img/notes.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: bottom;
   h1 {
     color: $letters;
     font-size: 4rem;

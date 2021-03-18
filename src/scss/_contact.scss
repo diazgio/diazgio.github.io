@@ -59,7 +59,9 @@
       background: $primerbg;
       border-radius: 40px;
       color: white;
-      
+      img {
+        width: 100%;
+      }
     }
   }
   .footer {

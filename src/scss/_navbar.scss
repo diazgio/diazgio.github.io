@@ -10,17 +10,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
+  background: $navbarbg;
   .namelogo {
-    background: $secondbg;
+    background: white;
     height: 12rem;
     width: 12rem;
-    border-radius: 50%;
+    border-radius: 20px;
     align-items: center;
     padding: 2rem;
     margin: 2rem auto;
     h1 {
-      color: white;
+      color: rgba(44, 43, 43, 0.623);
       font-size: 3.5rem;
       font-weight: bolder;
     }
