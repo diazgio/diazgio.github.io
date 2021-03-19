@@ -3,7 +3,7 @@
 
 > In this project you will find some of my most recent works and means to contact me.
 
-![Page](./src/img/home.png)
+![Page](./src/img/screenshot.png)
 
 ## 🔧 Built With
 
