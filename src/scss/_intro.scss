@@ -79,13 +79,14 @@
     width: 75vw;
     .intro-img {
       img {
-        top: 23%;
-        left: 6rem;
+        top: 21%;
+        left: 0;
         width: 27rem;
       }
     }
     .intro-header {
       padding-top: 8rem;
+      margin-left: -5rem;
       .intro-title {
         margin-bottom: 3rem;
         h1 {
@@ -104,7 +105,52 @@
     }
   }
   @include responsive3 {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    .intro-img {
+      img {
+        top: 23%;
+      }
+    }
+  }
+  @include responsive4 {
+    display: block;
+    .intro-img {
+      img {
+        display: none;
+      }
+    }
+    .intro-header {
+      padding-top: 2rem;
+      margin-left: -5rem;
+      .intro-message {
+        margin-left: 2rem;
+        margin-top: 7rem;
+        width: 39rem;
+      }
+    }
+  }
+  @include responsive5 {
+    .intro-header {
+      .intro-message {
+        width: 34rem;
+      }
+    }
+  }
+  @include responsive6 {
+    padding: 4rem;
+    .intro-header {
+      .intro-title {
+        h1 {
+          font-size: 6rem;
+        }
+      }
+      .intro-message {
+        width: 30rem;
+      }
+      .intro-social {
+        margin-right: -2.5rem;
+      }
+    }
   }
 }

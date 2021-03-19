@@ -136,10 +136,54 @@
           }
         }
       }
+      .square {
+        img {
+          height: 95%;
+        }
+      }
     }
     .footer {
       height: 15vh;
       padding-top: 1.5rem;
+    }
+  }
+  @include responsive4 {
+    .contact-container {
+      height: fit-content;
+      .contact-form {
+        margin-right: 0;
+        width: 100%;
+        form {
+          .form-group {
+            display: block;
+            .inputs-cont {
+              margin-left: 0;
+              .messagearea {
+                width: 30rem;
+              }
+            }
+            .email {
+              input {
+                width: 30rem;
+              }
+            }
+          }
+          .contact-button {
+            margin-left: 0;
+          }
+        }
+      }
+      .square {
+        display: none;
+      }
+    }
+  }
+  @include responsive5 {
+    .contact-container {
+      .contact-form {
+        padding: 0;
+        margin-left: -2rem;
+      }
     }
   }
 }

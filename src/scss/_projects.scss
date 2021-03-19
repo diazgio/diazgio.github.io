@@ -184,4 +184,39 @@
     width: 100vw;
     height: 100vh;
   }
+  @include responsive4 {
+    height: fit-content;
+    padding-bottom: 3rem;
+    .big-container {
+      .proj-card {
+        width: 100%;
+        height: fit-content;
+        .dot-container {
+          div {
+            left: 21%;
+            .no-pro-dot,
+            .cosplay-dot,
+            .consultly-dot,
+            .memorize-dot,
+            .sdp-dot,
+            .music-dot,
+            .jscapstone-dot {
+              width: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include responsive5 {
+    .big-container {
+      .proj-card {
+        .dot-container {
+          div {
+            left: 16%;
+          }
+        }
+      }
+    }
+  }
 }

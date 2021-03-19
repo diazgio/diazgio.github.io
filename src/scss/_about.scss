@@ -151,7 +151,7 @@
       }
       .about-img {
         img {
-          width: 35rem;
+          width: 80%;
         }
       }
     }
@@ -163,5 +163,32 @@
   }
   @include responsive3 {
     width: 100vw;
+  }
+  @include responsive4 {
+    height: fit-content;
+    .about1 {
+      .about-container {
+        width: 100%;
+        .about-info {
+          .title1,
+          .title2 {
+            text-align: center;
+            margin-left: 0;
+          }
+
+        }
+      }
+      .about-img {
+        display: none;
+      }
+    }
+    .about-know {
+      height: fit-content;
+      flex-direction: column;
+      align-items: center;
+      .about-card {
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
