@@ -18,6 +18,12 @@ $titles: #10516ef6;
   }
 }
 
+@mixin responsive2dot5 {
+  @media only screen and (min-width: 769px) and (max-width: 893px) {
+    @content;
+  }
+}
+
 @mixin responsive3 {
   @media only screen and(max-width: 768px) {
     @content;

@@ -122,6 +122,36 @@
       }
     }
   }
+  @include responsive2dot5 {
+    .contact-top {
+      height: 15vh;
+    }
+    .contact-container {
+      padding: 5rem 6rem 1rem 6rem;
+      height: 70vh;
+      .contact-form {
+        form {
+          .form-group {
+            input {
+              width: 28rem;
+            }
+          }
+          .contact-button {
+            button {
+              margin: 3rem 0 1rem 0;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      height: 15vh;
+      padding-top: 2.5rem;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
   @include responsive3 {
     width: 100vw;
     .contact-top {

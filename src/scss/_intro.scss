@@ -104,6 +104,19 @@
       }
     }
   }
+  @include responsive2dot5 {
+    .intro-header {
+      margin-left: -8rem;
+      .intro-message {
+        width: 57rem;
+      }
+    }
+    .intro-img {
+      img {
+        width: 24rem;
+      }
+    }
+  }
   @include responsive3 {
     width: 100%;
     height: 100%;
