@@ -107,12 +107,16 @@
           width: 60%;
           display: flex;
           justify-content: space-around;
+          .demo2 {
+            display: none;
+          }
         }
         .buttons-container1 {
           margin: 0 auto;
           width: 60%;
           display: flex;
           justify-content: space-around;
+          
         }
       }
     }
@@ -216,6 +220,61 @@
             left: 16%;
           }
         }
+      }
+    }
+  }
+  @include responsive6 {
+    .big-container {
+      .proj-card {
+        .innerSlide-container {
+          height: 23rem;
+          .projSlides0,
+          .projSlides,
+          .projSlides2,
+          .projSlides3,
+          .projSlides4,
+          .projSlides5,
+          .projSlides6 {
+            img {
+              height: 20rem;
+            }
+          }
+        }
+        .dot-container {
+          div {
+            top: -4rem;
+            .no-pro-dot,
+            .cosplay-dot,
+            .consultly-dot,
+            .memorize-dot,
+            .sdp-dot,
+            .music-dot,
+            .jscapstone-dot {
+              width: 6rem;
+              height: 6rem;
+            }
+          }
+        }
+        .info-container {
+          .buttons-container {
+            .demo1 {
+              display: none;
+            }
+            .demo2 {
+              display: block;
+            }
+          }
+        }
+      }
+      .prev {
+        top: 50%;
+        left: -1.5rem;
+        padding: 8px 10px;
+      }
+      .next {
+        top: 50%;
+        right: -1.5rem;
+        padding: 8px 10px;
       }
     }
   }

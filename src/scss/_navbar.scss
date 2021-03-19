@@ -3,7 +3,7 @@
 .navbar-menu {
   position: fixed;
   width: 20vw;
-  height: 100%;
+  height: 100vh;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -140,6 +140,13 @@
     .menu {
       width: 100%;
       height: 100%;
+    }
+  }
+  @include responsive6 {
+    height: 7vh;
+    .hamburger {
+      right: 7%;
+      transform: translate(-8%, -50%);
     }
   }
 }

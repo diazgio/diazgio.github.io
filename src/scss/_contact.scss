@@ -186,4 +186,27 @@
       }
     }
   }
+  @include responsive6 {
+    .contact-container {
+      .contact-form {
+        form {
+          .form-group {
+            input {
+              width: 25rem;
+            }
+            .inputs-cont {
+              .messagearea {
+                width: 25rem;
+              }
+            }
+            .email {
+              input {
+                width: 25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
