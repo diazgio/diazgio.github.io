@@ -1,7 +1,7 @@
 @import './variables';
 
 #about {
-  height: 100vh;
+  height: 100%;
   width: 80vw;
   background: $primerbg;
   display: flex;
@@ -10,7 +10,7 @@
   justify-content: center;
   .about1 {
     width: 100%;
-    height: 70vh;
+    height: 70%;
     .about-container {
       width: 50%;
       .about-info {
@@ -59,7 +59,7 @@
         margin: 0 auto;
       }
       .about-button {
-        width: 50%;
+        width: 52%;
         text-align: center;
         margin: 7rem 0 4rem 5rem;
         a {
@@ -81,7 +81,7 @@
   .about-know {
     margin: 1rem auto;
     width: 80%;
-    height: 30vh;
+    height: 30%;
     justify-content: space-around;
     .about-card {
       margin: 0;
@@ -159,8 +159,8 @@
       }
     }
     .about-know {
-      margin-top: 30rem;
-      margin-bottom: 14rem;
+      margin-top: 3rem;
+      margin-bottom: 5rem;
       .about-card {
         margin: 0 1rem;
       }
@@ -169,6 +169,16 @@
   @include responsive3 {
     width: 100vw;
     height: 100%;
+    .about1 {
+      .about-container {
+        .about-img {
+          .about-button {
+            width: 52%;
+            margin: 7rem 0 4rem 3rem;
+          }
+        }
+      }
+    }
   }
   @include responsive4 {
     height: fit-content;
