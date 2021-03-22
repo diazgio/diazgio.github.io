@@ -156,6 +156,8 @@
     }
   }
   @include responsive1 {
+    height: 100%;
+    padding-bottom: 6rem;
     .big-container {
       .proj-card {
         height: 99%;
@@ -186,7 +188,7 @@
   }
   @include responsive3 {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
   }
   @include responsive4 {
     height: fit-content;

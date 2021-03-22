@@ -31,7 +31,7 @@ $titles: #10516ef6;
 }
 
 @mixin responsive4 {
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 464px) {
     @content;
   }
 }

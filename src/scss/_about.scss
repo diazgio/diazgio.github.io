@@ -110,6 +110,7 @@
     }
   }
   @include responsive1 {
+    height: 100%;
     .about1 {
       .about-container {
         .about-info {
@@ -150,12 +151,16 @@
         }
       }
       .about-img {
+        justify-content: end;
+        margin-top: 5rem;
         img {
-          width: 80%;
+          width: 50%;
         }
       }
     }
     .about-know {
+      margin-top: 30rem;
+      margin-bottom: 14rem;
       .about-card {
         margin: 0 1rem;
       }
@@ -163,6 +168,7 @@
   }
   @include responsive3 {
     width: 100vw;
+    height: 100%;
   }
   @include responsive4 {
     height: fit-content;
@@ -186,6 +192,7 @@
       height: fit-content;
       flex-direction: column;
       align-items: center;
+      margin-top: 9rem;
       .about-card {
         margin-bottom: 1rem;
       }
