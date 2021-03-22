@@ -98,8 +98,8 @@
       transform: translateY(-50%);
       background: $primerbg;
       z-index: 2;
-      clip-path: circle(100px at 90% -15%);
-      -webkit-clip-path: circle(100px at 90% -15%);
+      clip-path: circle(100px at 90% -35%);
+      -webkit-clip-path: circle(100px at 90% -35%);
       transition: all 1s ease-out;
       pointer-events: none;
       .first-item {
@@ -130,8 +130,8 @@
       }
     }
     .menu.open {
-      clip-path: circle(2000px at 90% -15%);
-      -webkit-clip-path: circle(2000px at 90% -15%);
+      clip-path: circle(2000px at 90% -35%);
+      -webkit-clip-path: circle(2000px at 90% -35%);
       pointer-events: all;
     }
   }
