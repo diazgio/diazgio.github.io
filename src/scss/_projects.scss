@@ -40,7 +40,8 @@
         .projSlides3,
         .projSlides4,
         .projSlides5,
-        .projSlides6 {
+        .projSlides6,
+        .projSlides7 {
           display: none;
           width: 100%;
           img {
@@ -66,7 +67,8 @@
           .memorize-dot,
           .sdp-dot,
           .music-dot,
-          .jscapstone-dot {
+          .jscapstone-dot,
+          .adopt-me-dot {
             cursor: pointer;
             height: 7rem;
             width: 9rem;
@@ -206,7 +208,8 @@
             .memorize-dot,
             .sdp-dot,
             .music-dot,
-            .jscapstone-dot {
+            .jscapstone-dot,
+            .adopt-me-dot {
               width: 7rem;
             }
           }
@@ -236,7 +239,8 @@
           .projSlides3,
           .projSlides4,
           .projSlides5,
-          .projSlides6 {
+          .projSlides6,
+          .projSlides7 {
             img {
               height: 20rem;
             }
@@ -251,7 +255,8 @@
             .memorize-dot,
             .sdp-dot,
             .music-dot,
-            .jscapstone-dot {
+            .jscapstone-dot,
+            .adopt-me-dot {
               width: 6rem;
               height: 6rem;
             }

@@ -21,6 +21,32 @@ function showSlidesMain(n) {
     }
   slides[mSliderIndex - 1].style.display = 'block';
 }
+
+// Adopt-Me Slider ------------------
+
+let AmlideIndex = 1;
+showSlidesAm(AmlideIndex);
+
+function currentSlideAm(n) {
+  showSlidesAm(AmlideIndex = n);
+}
+
+function showSlidesAm(n) {
+  var i;
+  var slides = document.getElementsByClassName('projSlides7');
+  var dots = document.getElementsByClassName('adopt-me-dot');
+  if (n > slides.length) {AmlideIndex = 1}
+    if (n < 1) {AmlideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active', '');
+    }
+  slides[AmlideIndex - 1].style.display = 'block';
+  dots[AmlideIndex - 1].className += ' active';
+}
+
 // Js capstone Slider --------------
 
 let JslideIndex = 1;
