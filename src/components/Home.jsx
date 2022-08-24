@@ -1,5 +1,5 @@
 import React from 'react';
-import { HiArrowNarrowRight } from 'react-icons/hi';
+import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 
 const Home = () => {
   return (
@@ -15,14 +15,14 @@ const Home = () => {
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
           I’m a full-stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building responsive full-stack web applications.
+          designing) exceptional digital experiences. Currently, I’m working in
+          pimentaGroup company as a full-stack web applications.
         </p>
         <div>
-          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#D2D621] hover:border-[#D2D621] hover:text-black'>
+          <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#D2D621] hover:border-[#D2D621] hover:font-bold'>
             View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3'/>
+            <span className='group-hover:rotate-90 group-hover:translate-y-[-5px] duration-300 group-hover:text-white'>
+              <BsFillArrowRightCircleFill className='ml-3'/>
             </span>
           </button>
         </div>
