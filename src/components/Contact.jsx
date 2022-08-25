@@ -22,11 +22,11 @@ const Contact = () => {
             <div className='flex flex-col lg:hidden '>
               <div className='flex mb-4'>
                 <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/giordano-diaz/" target='_blank' rel="noreferrer">
-                  <FaLinkedin size={30} />
+                  <FaLinkedin className='mr-3' size={30} /> LinkedIn
                 </a>
 
                 <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/diazgio" target='_blank' rel="noreferrer">
-                  <FaGithub size={30} />
+                  <FaGithub className='mr-3' size={30} /> GitHub
                 </a>
               </div>
 
