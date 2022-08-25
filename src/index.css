@@ -10,6 +10,7 @@
   }
 
   li {
+    @apply list-none;
     @apply px-4;
     @apply cursor-pointer;
   }
@@ -28,4 +29,10 @@
     rgba(112, 157, 255, 0.7),
     hsla(242, 74%, 61%, 0.4)
   )!important;
+}
+
+.photo-content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

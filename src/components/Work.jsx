@@ -33,7 +33,8 @@ const Work = () => {
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/No-Problem-Capstone">
+
+                <a href="https://github.com/diazgio/No-Problem-Capstone" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -50,12 +51,12 @@ const Work = () => {
               </span>
 
               <div className='pt-8 text-center'>
-                <a href="https://diazgio.github.io/Cosplay-shop-capstone/">
+                <a href="https://diazgio.github.io/Cosplay-shop-capstone/" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/Cosplay-shop-capstone">
+                <a href="https://github.com/diazgio/Cosplay-shop-capstone" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -72,12 +73,12 @@ const Work = () => {
               </span>
 
               <div className='pt-8 text-center'>
-                <a href="https://sharp-clarke-b3b6a5.netlify.app/">
+                <a href="https://sharp-clarke-b3b6a5.netlify.app/" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/JS-Capstone">
+                <a href="https://github.com/diazgio/JS-Capstone" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -94,12 +95,12 @@ const Work = () => {
               </span>
 
               <div className='pt-8 text-center'>
-                <a href="https://pure-chamber-86282.herokuapp.com/">
+                <a href="https://pure-chamber-86282.herokuapp.com/" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/React-Capstone-Catalogue">
+                <a href="https://github.com/diazgio/React-Capstone-Catalogue" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -121,7 +122,7 @@ const Work = () => {
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/ButacaVip/tree/development">
+                <a href="https://github.com/diazgio/ButacaVip/tree/development" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -143,7 +144,7 @@ const Work = () => {
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/diazgio/Consultly">
+                <a href="https://github.com/diazgio/Consultly" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
