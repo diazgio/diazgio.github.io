@@ -20,7 +20,7 @@ const Home = () => {
           pimentaGroup company as a full-stack web applications.
         </p>
         <li>
-          <Link to='about' className='text-white group w-40 hover:w-[162px] border-2 px-6 py-3 my-2 flex items-center hover:bg-[#D2D621] hover:border-[#D2D621] hover:font-bold'>
+          <Link to='about' smooth={true} duration={500} className='text-white group w-40 hover:w-[162px] border-2 px-6 py-3 my-2 flex items-center hover:bg-[#D2D621] hover:border-[#D2D621] hover:font-bold'>
             View Work
             <span className='group-hover:rotate-90 group-hover:translate-y-[-5px] duration-300 group-hover:text-white'>
               <BsFillArrowRightCircleFill className='ml-3'/>
