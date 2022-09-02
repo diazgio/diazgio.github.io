@@ -21,23 +21,35 @@ const Contact = () => {
             </p>
             <div className='flex flex-col lg:hidden '>
               <div className='flex mb-4'>
-                <a className='flex items-center w-full text-gray-300' href="https://www.linkedin.com/in/giordano-diaz/" target='_blank' rel="noreferrer">
-                  <FaLinkedin className='mr-3' size={30} /> LinkedIn
-                </a>
+                <div className='flex items-center w-1/2'>
+                  <a className='flex items-center justify-center text-gray-300 mr-3 bubble' href="https://www.linkedin.com/in/giordano-diaz/" target='_blank' rel="noreferrer">
+                    <FaLinkedin size={30} />
+                  </a>
+                  <span className='text-gray-300'>LinkedIn</span>
+                </div>
 
-                <a className='flex items-center w-full text-gray-300' href="https://github.com/diazgio" target='_blank' rel="noreferrer">
-                  <FaGithub className='mr-3' size={30} /> GitHub
-                </a>
+                <div className='flex items-center w-1/2'>
+                  <a className='flex items-center justify-center text-gray-300 mr-3 bubble' href="https://github.com/diazgio" target='_blank' rel="noreferrer">
+                    <FaGithub size={30} />
+                  </a>
+                  <span className='text-gray-300'>GitHub</span>
+                </div>
               </div>
 
               <div className='flex'>
-                <a className='flex items-center w-full text-gray-300' href={mailer} target='_blank' rel="noreferrer">
-                  <HiOutlineMail className='mr-3' size={30} /> Email Me
-                </a>
+                <div className='flex items-center w-1/2'>
+                  <a className='flex items-center justify-center text-gray-300 mr-3 bubble' href={mailer} target='_blank' rel="noreferrer">
+                    <HiOutlineMail size={30} />
+                  </a>
+                  <span className='text-gray-300'>Email Me</span>
+                </div>
 
-                <a className='flex items-center w-full text-gray-300' href="https://drive.google.com/file/d/1-JEXHwn9AN5Y2CP2xjZbnEhlBadd5arE/view?usp=sharing" target="_blank" rel="noreferrer">
-                  <BsFillPersonLinesFill className='mr-3' size={30} /> Resume
-                </a>
+                <div className='flex items-center w-1/2'>
+                  <a className='flex items-center justify-center text-gray-300 mr-3 bubble' href="https://drive.google.com/file/d/1-JEXHwn9AN5Y2CP2xjZbnEhlBadd5arE/view?usp=sharing" target="_blank" rel="noreferrer">
+                    <BsFillPersonLinesFill size={30} />
+                  </a>
+                  <span className='text-gray-300'>Resume</span>
+                </div>
               </div>
             </div>
           </div>

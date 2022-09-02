@@ -37,6 +37,43 @@
   background-position: center;
 }
 
+.bubble {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background: transparent;
+  text-shadow: -2px -2px 5px #fff;
+  filter: drop-shadow(4px 4px 10px #fff);
+  border-radius: 50%;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.2),
+  5px 15px 5px rgba(0, 0, 0, 0.05),
+  5px 10px 10px rgba(0, 0, 0, 0.05),
+  inset -10px -10px 15px rgba(218, 213, 213, 0.8);
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  background: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  background: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
 .inputBox {
   position: relative;
 }
