@@ -1,5 +1,5 @@
 import React from 'react';
-import NoProblemProject from '../assets/no-problem-project.png';
+import DashBoard from '../assets/dashboard_customers.png';
 import CosplayProject from '../assets/cosplay-project.png';
 import JsProject from '../assets/js-project.gif';
 import PokemonProject from '../assets/pokemon-project.png';
@@ -20,21 +20,21 @@ const Work = () => {
         {/* Container */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {/* Grid Item */}
-          <div style={{ backgroundImage: `url(${NoProblemProject})` }}
+          <div style={{ backgroundImage: `url(${DashBoard})` }}
           className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
             <div className='opacity-0 group-hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-widers'>
-                No Problem Project (RoR)
+                Admin Dashboard (React)
               </span>
 
               <div className='pt-8 text-center'>
-                <a href="/">
+                <a href="https://gio-admin-dashboard.vercel.app/">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
 
-                <a href="https://github.com/diazgio/No-Problem-Capstone" target='_blank' rel="noreferrer">
+                <a href="https://github.com/diazgio/Dashboard" target='_blank' rel="noreferrer">
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
