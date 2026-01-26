@@ -4,50 +4,58 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { SectionTitle, GlassCard, GlassButton } from './ui';
 import DashBoard from '../assets/dashboard_customers.png';
 import CosplayProject from '../assets/cosplay-project.png';
-import PokemonProject from '../assets/pokemon-project.png';
-import ButacaProject from '../assets/butaca-project.png';
-import ConsultlyProject from '../assets/consultly-project.png';
 
 const Work = () => {
   const projects = [
     {
       title: 'Admin Dashboard',
-      description: 'A modern admin dashboard built with React featuring real-time data visualization, user management, and responsive design.',
+      description: 'Modern admin panel built with React and Syncfusion UI components. Features interactive data visualization with charts and graphs, customer management interface, and responsive multi-page layout with Tailwind CSS styling.',
       image: DashBoard,
-      tags: ['React', 'Material UI', 'Charts'],
+      tags: ['React', 'Tailwind CSS', 'Syncfusion', 'Vercel'],
       demo: 'https://gio-admin-dashboard.vercel.app/',
       code: 'https://github.com/diazgio/Dashboard',
       featured: true,
     },
     {
+      title: 'E-commerce Platform',
+      description: 'Full-stack e-commerce application built from scratch with Ruby on Rails. Includes product catalog, shopping cart, user authentication, and payment integration. Containerized with Docker for easy deployment.',
+      image: null,
+      tags: ['Ruby on Rails', 'PostgreSQL', 'Docker', 'Stimulus'],
+      code: 'https://github.com/diazgio/Ecommerce',
+      gradient: 'from-red-500 to-orange-500',
+    },
+    {
+      title: 'Peque in Candy World',
+      description: 'Platform video game built with Phaser 3 engine. Players collect stars, climb platforms, and defeat enemies. Features leaderboard integration via external API, retro-style graphics, and engaging sound effects.',
+      image: null,
+      tags: ['JavaScript', 'Phaser 3', 'Webpack', 'REST API'],
+      demo: 'https://sharp-clarke-b3b6a5.netlify.app/',
+      code: 'https://github.com/diazgio/JS-Capstone',
+      gradient: 'from-purple-500 to-pink-500',
+    },
+    {
       title: 'Cosplay Shop',
-      description: 'E-commerce platform for cosplay enthusiasts with product catalog, shopping cart, and responsive design.',
+      description: 'Responsive e-commerce mockup showcasing modern CSS techniques. Built with HTML5, Sass preprocessor, and Flexbox layouts. Implements UX-focused design principles and code quality standards with StyleLint.',
       image: CosplayProject,
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      tags: ['HTML5', 'CSS3', 'Sass', 'Responsive'],
       demo: 'https://diazgio.github.io/Cosplay-shop-capstone/',
       code: 'https://github.com/diazgio/Cosplay-shop-capstone',
     },
     {
-      title: 'Pokedex Project',
-      description: 'Interactive Pokedex application using the PokeAPI to display Pokemon information with search and filter functionality.',
-      image: PokemonProject,
-      tags: ['React', 'API', 'Redux'],
-      demo: 'https://pure-chamber-86282.herokuapp.com/',
-      code: 'https://github.com/diazgio/React-Capstone-Catalogue',
+      title: 'PetSpa Booking',
+      description: 'Pet grooming appointment scheduling application. Features user authentication, appointment management, service catalog, and admin dashboard. Built with Ruby on Rails and containerized with Docker.',
+      image: null,
+      tags: ['Ruby on Rails', 'PostgreSQL', 'Docker', 'RSpec'],
+      code: 'https://github.com/diazgio/Petspa',
+      gradient: 'from-green-500 to-teal-500',
     },
     {
-      title: 'Butaca VIP',
-      description: 'Cinema ticket booking system with seat selection, movie listings, and payment integration.',
-      image: ButacaProject,
-      tags: ['Ruby on Rails', 'PostgreSQL', 'Stripe'],
-      code: 'https://github.com/diazgio/ButacaVip/tree/development',
-    },
-    {
-      title: 'Consultly',
-      description: 'Professional consulting platform connecting experts with clients, featuring scheduling and video calls.',
-      image: ConsultlyProject,
-      tags: ['Ruby on Rails', 'WebRTC', 'PostgreSQL'],
-      code: 'https://github.com/diazgio/Consultly',
+      title: 'Weather & Score App',
+      description: 'Real-time application displaying weather forecasts and football match data. Integrates multiple external APIs to fetch and display live information with a clean, user-friendly interface.',
+      image: null,
+      tags: ['Ruby on Rails', 'REST APIs', 'JavaScript'],
+      code: 'https://github.com/diazgio/weather_and_score_app',
+      gradient: 'from-blue-500 to-cyan-500',
     },
   ];
 
@@ -79,7 +87,7 @@ const Work = () => {
       <div className='max-w-[1200px] mx-auto px-8 flex flex-col justify-center w-full h-full relative z-10'>
         <SectionTitle
           title='My Work'
-          subtitle='Check out some of my recent projects'
+          subtitle='A selection of projects showcasing my skills in full-stack development'
         />
 
         <motion.div
@@ -89,7 +97,7 @@ const Work = () => {
           viewport={{ once: true, margin: '-50px' }}
           className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'
         >
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <motion.div
               key={project.title}
               variants={itemVariants}
@@ -98,12 +106,20 @@ const Work = () => {
               <GlassCard className='h-full overflow-hidden group'>
                 {/* Image Container */}
                 <div className='relative h-48 overflow-hidden'>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
-                    loading='lazy'
-                  />
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-110'
+                      loading='lazy'
+                    />
+                  ) : (
+                    <div className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center`}>
+                      <span className='text-4xl font-bold text-white/30'>
+                        {project.title.split(' ').map(w => w[0]).join('')}
+                      </span>
+                    </div>
+                  )}
                   {/* Overlay */}
                   <div className='absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-60' />
 
@@ -130,6 +146,13 @@ const Work = () => {
                       <FaGithub size={18} />
                     </a>
                   </div>
+
+                  {/* Featured Badge */}
+                  {project.featured && (
+                    <div className='absolute top-3 right-3 px-2 py-1 bg-accent/90 text-white text-xs font-medium rounded-full'>
+                      Featured
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}
@@ -137,7 +160,7 @@ const Work = () => {
                   <h3 className='text-xl font-bold text-text-primary mb-2'>
                     {project.title}
                   </h3>
-                  <p className='text-text-secondary text-sm mb-4 line-clamp-2'>
+                  <p className='text-text-secondary text-sm mb-4 line-clamp-3'>
                     {project.description}
                   </p>
 
