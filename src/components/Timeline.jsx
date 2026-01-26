@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaGraduationCap, FaUserTie, FaUsers } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap, FaUsers } from 'react-icons/fa';
 import { SectionTitle, GlassCard } from './ui';
 
 const Timeline = () => {
