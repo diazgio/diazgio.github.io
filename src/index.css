@@ -2,20 +2,132 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @layer base {
   body {
-    @apply font-[Raleway];
+    @apply font-['Inter'] bg-primary text-text-primary;
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
   }
 
   li {
-    @apply list-none;
-    @apply px-4;
-    @apply cursor-pointer;
+    @apply list-none px-4 cursor-pointer;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
   }
 }
 
+@layer components {
+  /* Glassmorphism Base Classes */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl
+           shadow-glass transition-all duration-300;
+  }
+
+  .glass-card-hover {
+    @apply glass-card hover:bg-white/10 hover:border-white/20
+           hover:shadow-glow hover:scale-[1.02];
+  }
+
+  /* Glow Effects */
+  .glow-accent {
+    @apply shadow-glow;
+  }
+
+  .glow-on-hover {
+    @apply transition-shadow duration-300 hover:shadow-glow-lg;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent via-accent-light to-purple-400
+           bg-clip-text text-transparent;
+  }
+
+  /* Glass Button */
+  .glass-button {
+    @apply px-6 py-3 bg-accent/20 backdrop-blur-md border border-accent/40
+           rounded-xl text-white font-medium transition-all duration-300
+           hover:bg-accent/40 hover:border-accent hover:shadow-glow;
+  }
+
+  .glass-button-solid {
+    @apply px-6 py-3 bg-accent backdrop-blur-md border border-accent
+           rounded-xl text-white font-medium transition-all duration-300
+           hover:bg-accent-dark hover:shadow-glow-lg;
+  }
+
+  /* Glass Input */
+  .glass-input {
+    @apply w-full px-4 py-3 bg-white/5 backdrop-blur-md border border-white/10
+           rounded-xl text-white placeholder-white/40 outline-none
+           transition-all duration-300
+           focus:border-accent focus:bg-white/10 focus:shadow-glow;
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-text-primary mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-text-secondary max-w-2xl;
+  }
+
+  /* Animated Background Shapes */
+  .bg-shape {
+    @apply absolute rounded-full opacity-20 blur-3xl;
+  }
+}
+
+@layer utilities {
+  /* Custom Scrollbar */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-accent/40 rounded-full;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/60;
+  }
+
+  /* Text Shadow for Glow Effect */
+  .text-glow {
+    text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+  }
+
+  /* Smooth transitions for reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-float-delayed,
+    .animate-glow,
+    .animate-pulse-slow,
+    .animate-spin-slow {
+      animation: none;
+    }
+  }
+}
+
+/* Legacy styles for backwards compatibility during migration */
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,9 +138,9 @@
 .content-div:hover {
   background-image: linear-gradient(
     to right,
-    rgba(112, 157, 255, 0.7),
-    hsla(242, 74%, 61%, 0.4)
-  )!important;
+    rgba(99, 102, 241, 0.8),
+    rgba(129, 140, 248, 0.6)
+  ) !important;
 }
 
 .photo-content {
@@ -37,98 +149,43 @@
   background-position: center;
 }
 
-.bubble {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  color: black;
-  background: transparent;
-  text-shadow: -2px -2px 5px #fff;
-  filter: drop-shadow(4px 4px 10px #fff);
-  border-radius: 50%;
-  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.2),
-  5px 15px 5px rgba(0, 0, 0, 0.05),
-  5px 10px 10px rgba(0, 0, 0, 0.05),
-  inset -10px -10px 15px rgba(218, 213, 213, 0.8);
-}
-
-.bubble::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 4px;
-  background: #fff;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.bubble::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 14px;
-  background: #fff;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-}
-
+/* Input Animations */
 .inputBox {
   position: relative;
 }
 
 .inputBox input,
 .inputBox textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgb(255, 255, 255, 0.7);
-  background: rgb(50, 62, 85);
-  border-radius: 5px;
-  outline: none;
-  color: #fff;
-  font-size: 1em;
-  transition: 0.5s;
+  @apply w-full p-3 bg-white/5 border border-white/10 rounded-xl
+         text-white outline-none transition-all duration-300;
+}
+
+.inputBox input:focus,
+.inputBox textarea:focus,
+.inputBox input:valid,
+.inputBox textarea:valid {
+  @apply border-accent bg-white/10;
 }
 
 .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 10px;
-  pointer-events: none;
-  font-size: 1.1em;
-  letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.7);
-  text-transform: uppercase;
-  transition: 0.5s;
+  @apply absolute left-0 p-3 pointer-events-none text-white/50
+         uppercase text-sm tracking-wider transition-all duration-300;
 }
 
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span,
 .inputBox textarea:valid ~ span,
 .inputBox textarea:focus ~ span {
-  color: #75e44f;
+  @apply text-accent text-xs px-2 bg-secondary rounded;
   transform: translateX(10px) translateY(-7px);
-  font-size: 0.65em;
-  padding: 0 10px;
-  background: rgb(50, 62, 85);
-  border-left: 1px solid #75e44f;
-  border-right: 1px solid #75e44f;
-  letter-spacing: 0.2em;
 }
 
-.inputBox:nth-child(2) input:valid ~ span,
-.inputBox:nth-child(2) input:focus ~ span,
-.inputBox:nth-child(2) textarea:valid ~ span,
-.inputBox:nth-child(2) textarea:focus ~ span {
-  background: #75e44f;
-  color: rgb(50, 62, 85);
-  border-radius: 2px;
+/* Bubble effect for social icons */
+.bubble {
+  @apply relative w-12 h-12 bg-white/10 backdrop-blur-md border border-white/20
+         rounded-full transition-all duration-300;
 }
 
-.inputBox input:valid,
-.inputBox input:focus,
-.inputBox textarea:valid,
-.inputBox textarea:focus {
-  border: 1px solid #75e44f;
+.bubble:hover {
+  @apply bg-accent/20 border-accent shadow-glow scale-110;
 }
